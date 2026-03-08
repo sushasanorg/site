@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HoR Members 2082 | Sushasan</title>
+    <meta name="description"
+        content="Complete list of House of Representative Members elected from election 2082 in Nepal.">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="SUSHASAN.png">
+    <!-- Google Fonts: Inter for a clean, institutional look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        sushasan: {
+                            blue: '#0d2d6c',
+                            red: '#d81c3f',
+                            grey: '#f3f4f6',
+                            dark: '#1f2937'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom scrollbar for data table on mobile */
+        .custom-scrollbar::-webkit-scrollbar {
+            height: 6px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 4px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+    </style>
+</head>
+
+<body
+    class="font-sans text-gray-800 antialiased bg-gray-50 selection:bg-sushasan-red selection:text-white flex flex-col min-h-screen">
+
+    <!-- Top Accent Bar -->
+    <div class="h-1 bg-sushasan-red w-full"></div>
+
+    <!-- Navigation -->
+    <header class="sticky top-0 bg-white/95 backdrop-blur-sm shadow-sm z-50 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="flex items-center gap-3">
+                        <img src="SUSHASAN.png" alt="Sushasan Logo" class="h-12 sm:h-14 w-auto object-contain"
+                            loading="lazy"
+                            onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'150\' height=\'50\'><rect width=\'150\' height=\'50\' fill=\'#0d2d6c\'/><text x=\'75\' y=\'30\' font-family=\'Arial\' font-size=\'16\' fill=\'white\' text-anchor=\'middle\'>Sushasan</text></svg>'">
+                    </a>
+                </div>
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="index.html#about"
+                        class="text-gray-600 hover:text-sushasan-blue font-medium transition-colors">About</a>
+                    <a href="index.html#pillars"
+                        class="text-gray-600 hover:text-sushasan-blue font-medium transition-colors">Pillars</a>
+                    <a href="index.html#questions"
+                        class="text-gray-600 hover:text-sushasan-blue font-medium transition-colors">Questions</a>
+                    <a href="House-of-Representative-Members.html"
+                        class="text-sushasan-blue font-bold transition-colors border-b-2 border-sushasan-blue py-1">HoR
+                        Members 2082</a>
+                    <a href="index.html#participate"
+                        class="bg-sushasan-blue text-white px-5 py-2.5 rounded hover:bg-blue-800 transition-colors font-medium">Get
+                        Involved</a>
+                </nav>
+                <!-- Mobile menu button -->
+                <div class="flex items-center md:hidden">
+                    <button type="button" id="mobile-menu-btn"
+                        class="text-gray-600 hover:text-sushasan-blue focus:outline-none p-2 rounded-md hover:bg-gray-100 transition-colors"
+                        aria-label="Toggle menu">
+                        <!-- Icon when menu is closed -->
+                        <svg id="menu-icon-closed" class="h-7 w-7 block" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                        <!-- Icon when menu is open -->
+                        <svg id="menu-icon-open" class="h-7 w-7 hidden" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Dropdown -->
+            <div id="mobile-menu"
+                class="hidden md:hidden absolute top-20 left-0 w-full bg-white border-b border-gray-200 shadow-xl overflow-hidden transition-all duration-300 z-40">
+                <nav class="px-4 pt-2 pb-6 space-y-2">
+                    <a href="index.html#about"
+                        class="block px-4 py-3 rounded-md text-base font-medium text-gray-800 hover:text-sushasan-blue hover:bg-gray-50 transition-colors">About
+                        Sushasan</a>
+                    <a href="index.html#pillars"
+                        class="block px-4 py-3 rounded-md text-base font-medium text-gray-800 hover:text-sushasan-blue hover:bg-gray-50 transition-colors">Our
+                        Pillars</a>
+                    <a href="index.html#questions"
+                        class="block px-4 py-3 rounded-md text-base font-medium text-gray-800 hover:text-sushasan-blue hover:bg-gray-50 transition-colors">Governance
+                        Questions</a>
+                    <a href="House-of-Representative-Members.html"
+                        class="block px-4 py-3 rounded-md text-base font-medium text-gray-800 hover:text-sushasan-blue hover:bg-gray-50 transition-colors">HoR
+                        Members 2082</a>
+                    <div class="pt-4 pb-2 border-t border-gray-100">
+                        <a href="index.html#participate"
+                            class="block w-full text-center px-4 py-3 rounded-md text-base font-bold bg-sushasan-blue text-white hover:bg-blue-800 transition-colors shadow-sm">Get
+                            Involved</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow pb-20">
+        <!-- Header Banner -->
+        <div class="bg-sushasan-blue text-white py-12 px-4 shadow-inner">
+            <div class="max-w-7xl mx-auto text-center md:text-left md:flex justify-between items-end">
+                <div>
+                    <h1 class="text-3xl md:text-4xl font-bold mb-2">House of Representatives (प्रतिनिधि सभा)</h1>
+                    <p class="text-blue-100 text-lg">Elected Members Directory - Election 2082 (165 FPTP)</p>
+                </div>
+                <div
+                    class="mt-4 md:mt-0 flex items-center justify-center md:justify-end gap-2 bg-white/10 px-4 py-2 rounded border border-white/20">
+                    <span class="w-3 h-3 bg-green-400 rounded-full animate-pulse"></span>
+                    <span class="text-sm font-medium">Data Verified by Sushasan</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-6">
+            <!-- Data Controls -->
+            <div class="bg-white rounded-xl shadow-md border border-gray-100 p-4 sm:p-6 mb-6">
+                <div class="flex flex-col md:flex-row gap-4 items-center">
+                    <!-- Search Bar -->
+                    <div class="flex-grow w-full relative">
+                        <svg class="absolute left-3 top-3 h-5 w-5 text-gray-400" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                        <input type="text" id="searchInput" placeholder="Search by Candidate Name or District..."
+                            class="w-full pl-10 pr-4 py-2.5 rounded-lg border border-gray-300 focus:ring-2 focus:ring-sushasan-blue focus:border-sushasan-blue outline-none transition-all text-sm">
+                    </div>
+
+                    <!-- Filters -->
+                    <div class="flex flex-wrap md:flex-nowrap gap-4 w-full md:w-auto">
+                        <!-- Province Filter -->
+                        <select id="provinceFilter"
+                            class="w-full md:w-36 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-sushasan-blue focus:border-sushasan-blue block p-2.5 outline-none cursor-pointer">
+                            <option value="all">All Provinces</option>
+                            <option value="Koshi">Koshi</option>
+                            <option value="Madhesh">Madhesh</option>
+                            <option value="Bagmati">Bagmati</option>
+                            <option value="Gandaki">Gandaki</option>
+                            <option value="Lumbini">Lumbini</option>
+                            <option value="Karnali">Karnali</option>
+                            <option value="Sudurpashchim">Sudurpashchim</option>
+                        </select>
+
+                        <!-- District Filter (Dynamic) -->
+                        <select id="districtFilter"
+                            class="w-full md:w-36 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-sushasan-blue focus:border-sushasan-blue block p-2.5 outline-none cursor-pointer">
+                            <option value="all">All Districts</option>
+                            <!-- Dynamic options will fill here -->
+                        </select>
+
+                        <!-- Party Filter -->
+                        <select id="partyFilter"
+                            class="w-full md:w-36 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-sushasan-blue focus:border-sushasan-blue block p-2.5 outline-none cursor-pointer">
+                            <option value="all">All Parties</option>
+                            <option value="NC">NC</option>
+                            <option value="UML">UML</option>
+                            <option value="NCP">NCP (Maoist)</option>
+                            <option value="RSP">RSP</option>
+                            <option value="RPP">RPP</option>
+                            <option value="JSB">JSB</option>
+                            <option value="SSP">SSP</option>
+                            <option value="Ind.">Independent</option>
+                        </select>
+
+                        <!-- Reset Button -->
+                        <button onclick="resetFilters()"
+                            class="w-full md:w-auto bg-gray-100 hover:bg-gray-200 text-gray-700 text-sm font-medium py-2.5 px-4 rounded-lg transition-colors border border-gray-300 whitespace-nowrap shadow-sm">
+                            Clear Filters
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Table Container -->
+            <div class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
+                <div class="overflow-x-auto custom-scrollbar">
+                    <table class="w-full text-left border-collapse min-w-[800px]">
+                        <thead>
+                            <tr class="bg-gray-50 border-b border-gray-200">
+                                <th class="px-6 py-4 font-bold text-xs text-gray-500 uppercase tracking-wider w-16">SN
+                                </th>
+                                <th class="px-6 py-4 font-bold text-xs text-gray-500 uppercase tracking-wider">Candidate
+                                    Name</th>
+                                <th class="px-6 py-4 font-bold text-xs text-gray-500 uppercase tracking-wider">District
+                                    / Area</th>
+                                <th class="px-6 py-4 font-bold text-xs text-gray-500 uppercase tracking-wider">Party
+                                </th>
+                                <th class="px-6 py-4 font-bold text-xs text-gray-500 uppercase tracking-wider">Province
+                                </th>
+                                <th
+                                    class="px-6 py-4 font-bold text-xs text-gray-500 uppercase tracking-wider text-right">
+                                    Total Votes</th>
+                            </tr>
+                        </thead>
+                        <tbody id="horTableBody" class="divide-y divide-gray-100 bg-white">
+                            <!-- Data injected here via JS -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Empty State -->
+                <div id="noDataState" class="hidden flex flex-col items-center justify-center py-16 px-4 text-center">
+                    <svg class="h-12 w-12 text-gray-300 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <h3 class="text-lg font-medium text-gray-900">No representatives found</h3>
+                    <p class="text-gray-500 mt-1">Adjust your search or filter criteria to see results.</p>
+                    <button onclick="resetFilters()"
+                        class="mt-4 text-sushasan-blue text-sm font-medium hover:underline">Clear all filters</button>
+                </div>
+            </div>
+
+            <div class="mt-6 flex items-center justify-between text-xs text-gray-500">
+                <p>Showing <span id="showingCount" class="font-bold text-gray-700">0</span> results based on data from
+                    the Election Commission.</p>
+                <button class="flex items-center gap-1 hover:text-sushasan-blue transition-colors font-medium">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                    </svg>
+                    Download CSV
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- 10. Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-10 sm:py-12 border-t border-gray-800 px-4 mt-auto">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 sm:gap-10 items-start">
+
+                <!-- Branding & Custom SVG Request -->
+                <div
+                    class="col-span-1 sm:col-span-2 md:col-span-1 text-center sm:text-left flex flex-col items-center sm:items-start">
+                    <!-- USER REQUESTED SVG GOES HERE -->
+                    <div
+                        class="mb-4 bg-white/5 p-3 rounded-lg border border-white/10 w-full flex justify-center sm:justify-start">
+                        <svg width="120" height="40" viewBox="0 0 120 40" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 30 L30 15 L50 20 L70 10 L90 25 L110 5" stroke="#d81c3f" stroke-width="3"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <circle cx="20" cy="22" r="3" fill="#0d2d6c" />
+                            <circle cx="60" cy="15" r="3" fill="#0d2d6c" />
+                            <circle cx="100" cy="15" r="3" fill="#0d2d6c" />
+                            <text x="60" y="38" font-family="Arial" font-size="10" fill="#cbd5e1"
+                                text-anchor="middle">SUSHASAN NETWORK</text>
+                        </svg>
+                    </div>
+                    <!-- END USER REQUESTED SVG -->
+                    <h2 class="text-xl font-bold text-white mb-1 font-sans tracking-wide">सुशासन</h2>
+                    <p class="text-xs text-gray-400 mb-4">नेतृत्व | व्यवस्थापन | जवाफदेहिता</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="text-center sm:text-left">
+                    <h4 class="text-white font-semibold mb-3 uppercase text-xs tracking-wider">Platform</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="index.html" class="hover:text-white transition-colors py-1 block">Home</a></li>
+                        <li><a href="House-of-Representative-Members.html"
+                                class="text-sushasan-red font-semibold hover:text-white transition-colors py-1 block">HoR
+                                Members 2082</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div class="text-center sm:text-left">
+                    <h4 class="text-white font-semibold mb-3 uppercase text-xs tracking-wider">Resources</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition-colors py-1 block">Governance Reports</a>
+                        </li>
+                        <li><a href="#" class="hover:text-white transition-colors py-1 block">Civic Education</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact & Social -->
+                <div class="text-center sm:text-left">
+                    <h4 class="text-white font-semibold mb-3 uppercase text-xs tracking-wider">Contact</h4>
+                    <ul class="space-y-2 text-sm mb-4 flex flex-col items-center sm:items-start">
+                        <li class="flex items-center gap-2">
+                            <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                            <a href="mailto:info@sushasan.org"
+                                class="hover:text-white transition-colors">info@sushasan.org</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div
+                class="mt-10 pt-6 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
+                <p>&copy; 2026 Sushasan (सुशासन). Data based on independent tracking.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Scripts for Data Table -->
+    <script>
+        // --- DATA SOURCE (165 Elected Members) ---
+        const horData = [
+            { sn: 1, province: "Koshi", district: "Taplejung-1", candidate: "Kshitij Thebe", party: "UML", votes: 13962 },
+            { sn: 2, province: "Koshi", district: "Panchthar-1", candidate: "N.K. Kerung", party: "NC", votes: 17233 },
+            { sn: 3, province: "Koshi", district: "Ilam-1", candidate: "Kazi Man Kagate", party: "UML", votes: 8898 },
+            { sn: 4, province: "Koshi", district: "Ilam-2", candidate: "Suhang Nembang", party: "UML", votes: 22426 },
+            { sn: 5, province: "Koshi", district: "Jhapa-1", candidate: "Nisha Dangi", party: "RSP", votes: 45680 },
+            { sn: 6, province: "Koshi", district: "Jhapa-2", candidate: "Indira Rana Magar", party: "RSP", votes: 60110 },
+            { sn: 7, province: "Koshi", district: "Jhapa-3", candidate: "Prakash Pathak", party: "RSP", votes: 38674 },
+            { sn: 8, province: "Koshi", district: "Jhapa-4", candidate: "S.P. Dhakal", party: "RSP", votes: 43631 },
+            { sn: 9, province: "Koshi", district: "Jhapa-5", candidate: "Balendra Shah", party: "RSP", votes: 68348 },
+            { sn: 10, province: "Koshi", district: "Sankhuwasabha-1", candidate: "Arjun Kumar Karki", party: "UML", votes: 7183 },
+            { sn: 11, province: "Koshi", district: "Terhathum-1", candidate: "Santosh Subba", party: "NC", votes: 11561 },
+            { sn: 12, province: "Koshi", district: "Bhojpur-1", candidate: "Dhruvaraj Rai", party: "SSP", votes: 16663 },
+            { sn: 13, province: "Koshi", district: "Dhankuta-1", candidate: "Rajendra Kumar Rai", party: "UML", votes: 18132 },
+            { sn: 14, province: "Koshi", district: "Morang-1", candidate: "Yagyamani Neupane", party: "RSP", votes: 27367 },
+            { sn: 15, province: "Koshi", district: "Morang-2", candidate: "Krishna Kumar Karki", party: "RSP", votes: 40924 },
+            { sn: 16, province: "Koshi", district: "Morang-3", candidate: "Ganesh Karki", party: "RSP", votes: 36924 },
+            { sn: 17, province: "Koshi", district: "Morang-4", candidate: "Santosh Rajbanshi", party: "RSP", votes: 40833 },
+            { sn: 18, province: "Koshi", district: "Morang-5", candidate: "Asha Jha", party: "RSP", votes: 30434 },
+            { sn: 19, province: "Koshi", district: "Morang-6", candidate: "Rubina Acharya", party: "RSP", votes: 55513 },
+            { sn: 20, province: "Koshi", district: "Sunsari-1", candidate: "Harka Raj Rai", party: "SSP", votes: 35741 },
+            { sn: 21, province: "Koshi", district: "Sunsari-2", candidate: "Lal Bikram Thapa", party: "RSP", votes: 57348 },
+            { sn: 22, province: "Koshi", district: "Sunsari-3", candidate: "Ashok Kr. Chaudhary", party: "RSP", votes: 47421 },
+            { sn: 23, province: "Koshi", district: "Sunsari-4", candidate: "Deepak Kumar Shah", party: "RSP", votes: 40177 },
+            { sn: 24, province: "Koshi", district: "Solukhumbu-1", candidate: "Prakash Singh Karki", party: "NC", votes: 13166 },
+            { sn: 25, province: "Koshi", district: "Khotang-1", candidate: "Aaren Rai", party: "SSP", votes: 16612 },
+            { sn: 26, province: "Koshi", district: "Okhaldhunga-1", candidate: "Bishwa Raj Pokharel", party: "RSP", votes: 13953 },
+            { sn: 27, province: "Koshi", district: "Udayapur-1", candidate: "Parash Mani Gelal", party: "RSP", votes: 30590 },
+            { sn: 28, province: "Koshi", district: "Udayapur-2", candidate: "Surya B. Tamang", party: "RSP", votes: 14802 },
+            { sn: 29, province: "Madhesh", district: "Saptari-1", candidate: "Pushpa K. Chaudhary", party: "RSP", votes: 38195 },
+            { sn: 30, province: "Madhesh", district: "Saptari-2", candidate: "Ramji Yadav", party: "RSP", votes: 28404 },
+            { sn: 31, province: "Madhesh", district: "Saptari-3", candidate: "Amar Kant Chaudhary", party: "RSP", votes: 32875 },
+            { sn: 32, province: "Madhesh", district: "Saptari-4", candidate: "Sitaram Shah", party: "RSP", votes: 36412 },
+            { sn: 33, province: "Madhesh", district: "Siraha-1", candidate: "Bablu Gupta", party: "RSP", votes: 41322 },
+            { sn: 34, province: "Madhesh", district: "Siraha-2", candidate: "Shiv Shankar Yadav", party: "RSP", votes: 39561 },
+            { sn: 35, province: "Madhesh", district: "Siraha-3", candidate: "Shambhu Kumar Yadav", party: "RSP", votes: 32249 },
+            { sn: 36, province: "Madhesh", district: "Siraha-4", candidate: "Tapeshwor Yadav", party: "RSP", votes: 36210 },
+            { sn: 37, province: "Madhesh", district: "Dhanusha-1", candidate: "Ram Paltan Shah", party: "NC", votes: 46210 },
+            { sn: 38, province: "Madhesh", district: "Dhanusha-2", candidate: "Ram Vinod Yadav", party: "RSP", votes: 41637 },
+            { sn: 39, province: "Madhesh", district: "Dhanusha-3", candidate: "Manish Jha", party: "RSP", votes: 43988 },
+            { sn: 40, province: "Madhesh", district: "Dhanusha-4", candidate: "Raj Kishore Mahato", party: "RSP", votes: 48270 },
+            { sn: 41, province: "Madhesh", district: "Mahottari-1", candidate: "Pramod Kumar Mahato", party: "RSP", votes: 34636 },
+            { sn: 42, province: "Madhesh", district: "Mahottari-2", candidate: "Deepak Kumar Shah", party: "RSP", votes: 32722 },
+            { sn: 43, province: "Madhesh", district: "Mahottari-3", candidate: "Ujjwal Kumar Jha", party: "RSP", votes: 32451 },
+            { sn: 44, province: "Madhesh", district: "Mahottari-4", candidate: "Gauri Kumari", party: "RSP", votes: 30132 },
+            { sn: 45, province: "Madhesh", district: "Sarlahi-1", candidate: "Nitima Bhandari", party: "RSP", votes: 44181 },
+            { sn: 46, province: "Madhesh", district: "Sarlahi-2", candidate: "Rabin Mahato", party: "RSP", votes: 42512 },
+            { sn: 47, province: "Madhesh", district: "Sarlahi-3", candidate: "N. Shah Kalwar", party: "RSP", votes: 46890 },
+            { sn: 48, province: "Madhesh", district: "Sarlahi-4", candidate: "Amresh Kumar Singh", party: "RSP", votes: 35688 },
+            { sn: 49, province: "Madhesh", district: "Rautahat-1", candidate: "Rajesh Kr. Chaudhary", party: "RSP", votes: 28946 },
+            { sn: 50, province: "Madhesh", district: "Rautahat-2", candidate: "Md. Firdosh Alam", party: "NC", votes: 29528 },
+            { sn: 51, province: "Madhesh", district: "Rautahat-3", candidate: "Ravindra Patel", party: "RSP", votes: 27318 },
+            { sn: 52, province: "Madhesh", district: "Rautahat-4", candidate: "Ganesh Poudel", party: "RSP", votes: 36876 },
+            { sn: 53, province: "Madhesh", district: "Bara-1", candidate: "Ganesh Dhimal", party: "RSP", votes: 39998 },
+            { sn: 54, province: "Madhesh", district: "Bara-2", candidate: "Chandan Kr. Singh", party: "RSP", votes: 35590 },
+            { sn: 55, province: "Madhesh", district: "Bara-3", candidate: "Arabind Shah", party: "RSP", votes: 40697 },
+            { sn: 56, province: "Madhesh", district: "Bara-4", candidate: "Rahwar Ansari", party: "RSP", votes: 41200 },
+            { sn: 57, province: "Madhesh", district: "Parsa-1", candidate: "Buddhi Prasad Pant", party: "RSP", votes: 27274 },
+            { sn: 58, province: "Madhesh", district: "Parsa-2", candidate: "Sushil Kumar Kanu", party: "RSP", votes: 30740 },
+            { sn: 59, province: "Madhesh", district: "Parsa-3", candidate: "R.P. Chaurasiya", party: "RSP", votes: 29679 },
+            { sn: 60, province: "Madhesh", district: "Parsa-4", candidate: "Tek Bahadur Shakya", party: "RSP", votes: 28006 },
+            { sn: 61, province: "Bagmati", district: "Dolakha-1", candidate: "Jagdish Kharel", party: "RSP", votes: 32376 },
+            { sn: 62, province: "Bagmati", district: "Ramechhap-1", candidate: "K.H. Budhathoki", party: "RSP", votes: 24808 },
+            { sn: 63, province: "Bagmati", district: "Sindhuli-1", candidate: "Dhanendra Karki", party: "RSP", votes: 16659 },
+            { sn: 64, province: "Bagmati", district: "Sindhuli-2", candidate: "Ashish Gajurel", party: "RSP", votes: 17940 },
+            { sn: 65, province: "Bagmati", district: "Rasuwa-1", candidate: "Mohan Acharya", party: "NC", votes: 10656 },
+            { sn: 66, province: "Bagmati", district: "Dhading-1", candidate: "Asika Tamang", party: "RSP", votes: 39128 },
+            { sn: 67, province: "Bagmati", district: "Dhading-2", candidate: "Bodh N. Shrestha", party: "RSP", votes: 26145 },
+            { sn: 68, province: "Bagmati", district: "Nuwakot-1", candidate: "Bikram Timilsina", party: "RSP", votes: 22609 },
+            { sn: 69, province: "Bagmati", district: "Nuwakot-2", candidate: "Achuttam Lamichhane", party: "RSP", votes: 32054 },
+            { sn: 70, province: "Bagmati", district: "Kathmandu-1", candidate: "Ranju Neupane", party: "RSP", votes: 15455 },
+            { sn: 71, province: "Bagmati", district: "Kathmandu-2", candidate: "Sunil K.C.", party: "RSP", votes: 34238 },
+            { sn: 72, province: "Bagmati", district: "Kathmandu-3", candidate: "Raju Nath Pandey", party: "RSP", votes: 18757 },
+            { sn: 73, province: "Bagmati", district: "Kathmandu-4", candidate: "Pukar Bam", party: "RSP", votes: 29142 },
+            { sn: 74, province: "Bagmati", district: "Kathmandu-5", candidate: "Sasmeet Pokharel", party: "RSP", votes: 30737 },
+            { sn: 75, province: "Bagmati", district: "Kathmandu-6", candidate: "Shishir Khanal", party: "RSP", votes: 27719 },
+            { sn: 76, province: "Bagmati", district: "Kathmandu-7", candidate: "Ganesh Parajuli", party: "RSP", votes: 27805 },
+            { sn: 77, province: "Bagmati", district: "Kathmandu-8", candidate: "Biraj B. Shrestha", party: "RSP", votes: 24592 },
+            { sn: 78, province: "Bagmati", district: "Kathmandu-9", candidate: "Dol Prasad Aryal", party: "RSP", votes: 35093 },
+            { sn: 79, province: "Bagmati", district: "Kathmandu-10", candidate: "Pradeep Bista", party: "RSP", votes: 37469 },
+            { sn: 80, province: "Bagmati", district: "Bhaktapur-1", candidate: "Rukesh Ranjit", party: "RSP", votes: 33436 },
+            { sn: 81, province: "Bagmati", district: "Bhaktapur-2", candidate: "Rajeev Khatri", party: "RSP", votes: 42334 },
+            { sn: 82, province: "Bagmati", district: "Lalitpur-1", candidate: "B.R. Maharjan", party: "RSP", votes: 23373 },
+            { sn: 83, province: "Bagmati", district: "Lalitpur-2", candidate: "Jagdish Kharel", party: "RSP", votes: 39491 },
+            { sn: 84, province: "Bagmati", district: "Lalitpur-3", candidate: "Tosima Karki", party: "RSP", votes: 43096 },
+            { sn: 85, province: "Bagmati", district: "Kavrepal.-1", candidate: "M.K. Chaulagai", party: "RSP", votes: 29618 },
+            { sn: 86, province: "Bagmati", district: "Kavrepal.-2", candidate: "Badan Kr. Bhandari", party: "RSP", votes: 53344 },
+            { sn: 87, province: "Bagmati", district: "Sindhu.-1", candidate: "Bharat P. Parajuli", party: "RSP", votes: 24412 },
+            { sn: 88, province: "Bagmati", district: "Sindhu.-2", candidate: "Yubraj Dulal", party: "NCP", votes: 21699 },
+            { sn: 89, province: "Bagmati", district: "Makwanpur-1", candidate: "Prakash Gautam", party: "RSP", votes: 36033 },
+            { sn: 90, province: "Bagmati", district: "Makwanpur-2", candidate: "Prashant Upreti", party: "RSP", votes: 30050 },
+            { sn: 91, province: "Bagmati", district: "Chitwan-1", candidate: "Hari Dhakal", party: "RSP", votes: 58208 },
+            { sn: 92, province: "Bagmati", district: "Chitwan-2", candidate: "Rabi Lamichhane", party: "RSP", votes: 54402 },
+            { sn: 93, province: "Bagmati", district: "Chitwan-3", candidate: "Sovita Gautam", party: "RSP", votes: 59277 },
+            { sn: 94, province: "Gandaki", district: "Gorkha-1", candidate: "Sudhan Gurung", party: "RSP", votes: 12171 },
+            { sn: 95, province: "Gandaki", district: "Gorkha-2", candidate: "Kavindra Burlakoti", party: "RSP", votes: 26660 },
+            { sn: 96, province: "Gandaki", district: "Manang-1", candidate: "Tek B. Gurung", party: "NC", votes: 2415 },
+            { sn: 97, province: "Gandaki", district: "Lamjung-1", candidate: "Dharma Raj K.C", party: "RSP", votes: 33898 },
+            { sn: 98, province: "Gandaki", district: "Kaski-1", candidate: "Khadak Raj Poudel", party: "RSP", votes: 39883 },
+            { sn: 99, province: "Gandaki", district: "Kaski-2", candidate: "Uttam P. Poudel", party: "RSP", votes: 31911 },
+            { sn: 100, province: "Gandaki", district: "Kaski-3", candidate: "Bina Gurung", party: "RSP", votes: 37750 },
+            { sn: 101, province: "Gandaki", district: "Tanahun-1", candidate: "Swarnim Wagle", party: "RSP", votes: 38040 },
+            { sn: 102, province: "Gandaki", district: "Tanahun-2", candidate: "Shriram Neupane", party: "RSP", votes: 32687 },
+            { sn: 103, province: "Gandaki", district: "Syangja-1", candidate: "Dhananjay Regmi", party: "RSP", votes: 29071 },
+            { sn: 104, province: "Gandaki", district: "Syangja-2", candidate: "Jhavi Lal Dumre", party: "RSP", votes: 25354 },
+            { sn: 105, province: "Gandaki", district: "Nawalpur-1", candidate: "Rajan Gautam", party: "RSP", votes: 50945 },
+            { sn: 106, province: "Gandaki", district: "Nawalpur-2", candidate: "Manish Khanal", party: "RSP", votes: 41347 },
+            { sn: 107, province: "Gandaki", district: "Mustang-1", candidate: "Y.G. Thakali", party: "NC", votes: 3307 },
+            { sn: 108, province: "Gandaki", district: "Myagdi-1", candidate: "Mahabir Pun", party: "Ind.", votes: 22850 },
+            { sn: 109, province: "Gandaki", district: "Baglung-1", candidate: "Sushil Khadka", party: "RSP", votes: 20927 },
+            { sn: 110, province: "Gandaki", district: "Baglung-2", candidate: "Som Sharma", party: "RSP", votes: 12647 },
+            { sn: 111, province: "Gandaki", district: "Parbat-1", candidate: "Sagar Bhusal", party: "RSP", votes: 26561 },
+            { sn: 112, province: "Lumbini", district: "Gulmi-1", candidate: "Sagar Dhakal", party: "RSP", votes: 29642 },
+            { sn: 113, province: "Lumbini", district: "Gulmi-2", candidate: "Govinda Panthi", party: "RSP", votes: 16967 },
+            { sn: 114, province: "Lumbini", district: "Palpa-1", candidate: "Sandeep Rana", party: "NC", votes: 18336 },
+            { sn: 115, province: "Lumbini", district: "Palpa-2", candidate: "Madhav B. Thapa", party: "RSP", votes: 26736 },
+            { sn: 116, province: "Lumbini", district: "Arghakhanchi-1", candidate: "Hari P. Bhusal", party: "RSP", votes: 35023 },
+            { sn: 117, province: "Lumbini", district: "Rupandehi-1", candidate: "Sunil Lamsal", party: "RSP", votes: 54845 },
+            { sn: 118, province: "Lumbini", district: "Rupandehi-2", candidate: "Sulabh Kharel", party: "RSP", votes: 56550 },
+            { sn: 119, province: "Lumbini", district: "Rupandehi-3", candidate: "Dr. L. Thapa", party: "RSP", votes: 58814 },
+            { sn: 120, province: "Lumbini", district: "Rupandehi-4", candidate: "Kanhaiya Baniya", party: "RSP", votes: 28066 },
+            { sn: 121, province: "Lumbini", district: "Rupandehi-5", candidate: "Taufiq A. Khan", party: "RSP", votes: 38806 },
+            { sn: 122, province: "Lumbini", district: "Kapilvastu-1", candidate: "Mohan L. Acharya", party: "RSP", votes: 34148 },
+            { sn: 123, province: "Lumbini", district: "Kapilvastu-2", candidate: "Bikram Thapa", party: "RSP", votes: 27635 },
+            { sn: 124, province: "Lumbini", district: "Kapilvastu-3", candidate: "Abhishek P. Shah", party: "NC", votes: 23535 },
+            { sn: 125, province: "Lumbini", district: "Rukum East-1", candidate: "Pushpa K. Dahal", party: "NCP", votes: 10240 },
+            { sn: 126, province: "Lumbini", district: "Rolpa-1", candidate: "Barshaman Pun", party: "NCP", votes: 27460 },
+            { sn: 127, province: "Lumbini", district: "Pyuthan-1", candidate: "Sushant Vedic", party: "RSP", votes: 27469 },
+            { sn: 128, province: "Lumbini", district: "Dang-1", candidate: "Devraj Pathak", party: "RSP", votes: 42602 },
+            { sn: 129, province: "Lumbini", district: "Dang-2", candidate: "Bipin Kr. Acharya", party: "RSP", votes: 43559 },
+            { sn: 130, province: "Lumbini", district: "Dang-3", candidate: "Kamal Subedi", party: "RSP", votes: 44248 },
+            { sn: 131, province: "Lumbini", district: "Banke-1", candidate: "Suresh K. Chaudhary", party: "RSP", votes: 32792 },
+            { sn: 132, province: "Lumbini", district: "Banke-2", candidate: "M. Ishtiaq Rai", party: "UML", votes: 24628 },
+            { sn: 133, province: "Lumbini", district: "Banke-3", candidate: "Khagendra Sunar", party: "RSP", votes: 29551 },
+            { sn: 134, province: "Lumbini", district: "Bardiya-1", candidate: "Thakur S. Tharu", party: "RSP", votes: 49631 },
+            { sn: 135, province: "Lumbini", district: "Bardiya-2", candidate: "Shridhar Pokhrel", party: "RSP", votes: 29678 },
+            { sn: 136, province: "Lumbini", district: "Parasi-1", candidate: "Vikram Khanal", party: "RSP", votes: 45241 },
+            { sn: 137, province: "Lumbini", district: "Parasi-2", candidate: "N.K. Gupta", party: "RSP", votes: 44138 },
+            { sn: 138, province: "Karnali", district: "Salyan-1", candidate: "Ramesh K. Malla", party: "NCP", votes: 23189 },
+            { sn: 139, province: "Karnali", district: "Dolpa-1", candidate: "Dhan B. Budha", party: "NCP", votes: 6802 },
+            { sn: 140, province: "Karnali", district: "Mugu-1", candidate: "Khadga Shahi", party: "NC", votes: 7914 },
+            { sn: 141, province: "Karnali", district: "Jumla-1", candidate: "Gyan B. Shahi", party: "RPP", votes: 14816 },
+            { sn: 142, province: "Karnali", district: "Kalikot-1", candidate: "Mahendra B. Shahi", party: "NCP", votes: 11734 },
+            { sn: 143, province: "Karnali", district: "Humla-1", candidate: "Jai Pati Rokaya", party: "NC", votes: 8797 },
+            { sn: 144, province: "Karnali", district: "Jajarkot-1", candidate: "Khadak B. Budha", party: "NC", votes: 20142 },
+            { sn: 145, province: "Karnali", district: "Dailekh-1", candidate: "Basna Thapa", party: "NC", votes: 12372 },
+            { sn: 146, province: "Karnali", district: "Dailekh-2", candidate: "L.P. Pokharel", party: "UML", votes: 13889 },
+            { sn: 147, province: "Karnali", district: "Surkhet-1", candidate: "Vishnu B. Khadka", party: "NC", votes: 26897 },
+            { sn: 148, province: "Karnali", district: "Surkhet-2", candidate: "Ramesh K. Sapkota", party: "RSP", votes: 30826 },
+            { sn: 149, province: "Karnali", district: "Rukum West-1", candidate: "Gopal Sharma", party: "NCP", votes: 21609 },
+            { sn: 150, province: "Sudurpashchim", district: "Bajura-1", candidate: "Janak Raj Giri", party: "NC", votes: 17173 },
+            { sn: 151, province: "Sudurpashchim", district: "Achham-1", candidate: "Bharat K. Swar", party: "NC", votes: 10759 },
+            { sn: 152, province: "Sudurpashchim", district: "Achham-2", candidate: "Yagya B. Bogati", party: "UML", votes: 9518 },
+            { sn: 153, province: "Sudurpashchim", district: "Bajhang-1", candidate: "Ain B. Mahar", party: "UML", votes: 18543 },
+            { sn: 154, province: "Sudurpashchim", district: "Doti-1", candidate: "Bharat B. Khadka", party: "NC", votes: 14897 },
+            { sn: 155, province: "Sudurpashchim", district: "Kailali-1", candidate: "Komal Gyawali", party: "RSP", votes: 17826 },
+            { sn: 156, province: "Sudurpashchim", district: "Kailali-2", candidate: "K.P. Khanal", party: "RSP", votes: 19057 },
+            { sn: 157, province: "Sudurpashchim", district: "Kailali-3", candidate: "Jagat P. Joshi", party: "RSP", votes: 20359 },
+            { sn: 158, province: "Sudurpashchim", district: "Kailali-4", candidate: "Khem Raj Koirala", party: "RSP", votes: 28556 },
+            { sn: 159, province: "Sudurpashchim", district: "Kailali-5", candidate: "Anand B. Chand", party: "RSP", votes: 31953 },
+            { sn: 160, province: "Sudurpashchim", district: "Darchula-1", candidate: "G.S. Thagunna", party: "UML", votes: 18891 },
+            { sn: 161, province: "Sudurpashchim", district: "Baitadi-1", candidate: "H.M. Bhandari", party: "RSP", votes: 22134 },
+            { sn: 162, province: "Sudurpashchim", district: "Dadeldhura-1", candidate: "Tara P. Joshi", party: "RSP", votes: 19131 },
+            { sn: 163, province: "Sudurpashchim", district: "Kanch.-1", candidate: "Janak S. Dhami", party: "RSP", votes: 24332 },
+            { sn: 164, province: "Sudurpashchim", district: "Kanch.-2", candidate: "Deepak R. Bohra", party: "RSP", votes: 33952 },
+            { sn: 165, province: "Sudurpashchim", district: "Kanch.-3", candidate: "G.S. Mahata", party: "RSP", votes: 27118 }
+        ];
+
+        // --- MOBILE MENU LOGIC ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const iconClosed = document.getElementById('menu-icon-closed');
+            const iconOpen = document.getElementById('menu-icon-open');
+
+            menuBtn.addEventListener('click', () => {
+                const isHidden = mobileMenu.classList.contains('hidden');
+                if (isHidden) {
+                    mobileMenu.classList.remove('hidden');
+                    iconClosed.classList.add('hidden');
+                    iconClosed.classList.remove('block');
+                    iconOpen.classList.remove('hidden');
+                    iconOpen.classList.add('block');
+                } else {
+                    mobileMenu.classList.add('hidden');
+                    iconClosed.classList.remove('hidden');
+                    iconClosed.classList.add('block');
+                    iconOpen.classList.add('hidden');
+                    iconOpen.classList.remove('block');
+                }
+            });
+
+            // Filter Event Listeners
+            document.getElementById('searchInput').addEventListener('input', renderTable);
+            document.getElementById('provinceFilter').addEventListener('change', () => {
+                populateDistricts();
+                renderTable();
+            });
+            document.getElementById('districtFilter').addEventListener('change', renderTable);
+            document.getElementById('partyFilter').addEventListener('change', renderTable);
+
+            // Initial Render
+            populateDistricts();
+            renderTable();
+        });
+
+        // --- HOR TABLE LOGIC ---
+
+        // Populate District Dropdown based on selected Province
+        function populateDistricts() {
+            const province = document.getElementById('provinceFilter').value;
+            const districtSelect = document.getElementById('districtFilter');
+            districtSelect.innerHTML = '<option value="all">All Districts</option>';
+
+            let uniqueDistricts = new Set();
+            horData.forEach(item => {
+                if (province === 'all' || item.province === province) {
+                    const distName = item.district.split('-')[0];
+                    uniqueDistricts.add(distName);
+                }
+            });
+
+            Array.from(uniqueDistricts).sort().forEach(dist => {
+                const opt = document.createElement('option');
+                opt.value = dist;
+                opt.textContent = dist;
+                districtSelect.appendChild(opt);
+            });
+        }
+
+        // Return tailwind badge styling per party
+        function getPartyBadgeColor(party) {
+            party = party.toUpperCase().trim();
+            switch (party) {
+                case 'NC': return 'bg-green-100 text-green-800 border-green-200';
+                case 'UML': return 'bg-red-100 text-red-800 border-red-200';
+                case 'RSP': return 'bg-blue-100 text-blue-800 border-blue-200';
+                case 'NCP': return 'bg-rose-100 text-rose-800 border-rose-200';
+                case 'RPP': return 'bg-yellow-100 text-yellow-800 border-yellow-200';
+                case 'JSB': return 'bg-pink-100 text-pink-800 border-pink-200';
+                case 'SSP': return 'bg-purple-100 text-purple-800 border-purple-200';
+                case 'IND.': return 'bg-gray-200 text-gray-800 border-gray-300';
+                default: return 'bg-gray-100 text-gray-800 border-gray-200';
+            }
+        }
+
+        // Render Table based on current filters
+        function renderTable() {
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+            const provinceFilter = document.getElementById('provinceFilter').value;
+            const districtFilter = document.getElementById('districtFilter').value;
+            const partyFilter = document.getElementById('partyFilter').value;
+
+            // Filter the Data
+            const filteredData = horData.filter(item => {
+                const matchesSearch = item.candidate.toLowerCase().includes(searchTerm) || item.district.toLowerCase().includes(searchTerm);
+                const matchesProvince = provinceFilter === 'all' || item.province === provinceFilter;
+                const matchesDistrict = districtFilter === 'all' || item.district.startsWith(districtFilter);
+                const matchesParty = partyFilter === 'all' || item.party === partyFilter;
+
+                return matchesSearch && matchesProvince && matchesDistrict && matchesParty;
+            });
+
+            const tbody = document.getElementById('horTableBody');
+            const noDataState = document.getElementById('noDataState');
+            const showingCount = document.getElementById('showingCount');
+
+            tbody.innerHTML = '';
+            showingCount.textContent = filteredData.length;
+
+            if (filteredData.length === 0) {
+                noDataState.classList.remove('hidden');
+                noDataState.classList.add('flex');
+            } else {
+                noDataState.classList.add('hidden');
+                noDataState.classList.remove('flex');
+
+                filteredData.forEach(item => {
+                    const tr = document.createElement('tr');
+                    tr.className = 'hover:bg-blue-50/50 transition-colors border-b border-gray-100 group';
+
+                    const formattedVotes = new Intl.NumberFormat('en-IN').format(item.votes);
+                    const badgeClass = getPartyBadgeColor(item.party);
+
+                    tr.innerHTML = `
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500 font-medium">${item.sn}</td>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                            <div class="text-sm font-bold text-gray-900 group-hover:text-sushasan-blue transition-colors">${item.candidate}</div>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">${item.district}</td>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                            <span class="px-2.5 py-1 inline-flex text-xs leading-5 font-bold rounded-md border ${badgeClass}">
+                                ${item.party}
+                            </span>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">${item.province}</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-semibold text-gray-900 text-right">${formattedVotes}</td>
+                    `;
+                    tbody.appendChild(tr);
+                });
+            }
+        }
+
+        // Reset all filters
+        function resetFilters() {
+            document.getElementById('searchInput').value = '';
+            document.getElementById('provinceFilter').value = 'all';
+            populateDistricts();
+            document.getElementById('partyFilter').value = 'all';
+            renderTable();
+        }
+    </script>
+</body>
+
+</html>
