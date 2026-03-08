@@ -1,0 +1,604 @@
+  <!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushasan | Strengthening Good Governance in Nepal</title>
+    <meta name="description"
+        content="A citizen-led platform promoting transparency, accountability, and responsible leadership in public institutions in Nepal.">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="SUSHASAN.png">
+    <!-- Google Fonts: Inter for a clean, institutional look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        sushasan: {
+                            blue: '#0d2d6c', // Deep institutional blue
+                            red: '#d81c3f',  // Civic red
+                            grey: '#f3f4f6', // Light grey background
+                            dark: '#1f2937'  // Dark text
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom styles for subtle enhancements */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(229, 231, 235, 0.5);
+        }
+
+        .progress-bar-striped {
+            background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+            background-size: 1rem 1rem;
+        }
+    </style>
+</head>
+
+<body class="font-sans text-gray-800 antialiased bg-white selection:bg-sushasan-red selection:text-white">
+
+    <!-- Top Accent Bar -->
+    <div class="h-1 bg-sushasan-red w-full"></div>
+
+    <!-- Navigation -->
+    <header class="sticky top-0 bg-white/95 backdrop-blur-sm shadow-sm z-50 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="flex items-center gap-3">
+                        <img src="SUSHASAN.png" alt="Sushasan Logo" class="h-12 sm:h-14 w-auto object-contain" loading="lazy"
+                            onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'150\' height=\'50\'><rect width=\'150\' height=\'50\' fill=\'#0d2d6c\'/><text x=\'75\' y=\'30\' font-family=\'Arial\' font-size=\'16\' fill=\'white\' text-anchor=\'middle\'>Sushasan</text></svg>'">
+                    </a>
+                </div>
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#about"
+                        class="text-gray-600 hover:text-sushasan-blue font-medium transition-colors">About</a>
+                    <a href="#pillars"
+                        class="text-gray-600 hover:text-sushasan-blue font-medium transition-colors">Pillars</a>
+                    <a href="#questions"
+                        class="text-gray-600 hover:text-sushasan-blue font-medium transition-colors">Questions</a>
+                    <!-- <a href="#tracker" class="text-gray-600 hover:text-sushasan-blue font-medium transition-colors">Tracker</a>
+                    <a href="#research" class="text-gray-600 hover:text-sushasan-blue font-medium transition-colors">Research</a> -->
+                    <a href="#participate"
+                        class="bg-sushasan-blue text-white px-5 py-2.5 rounded hover:bg-blue-800 transition-colors font-medium">Get
+                        Involved</a>
+                </nav>
+                <!-- Mobile menu button -->
+                <div class="flex items-center md:hidden">
+                    <button type="button" id="mobile-menu-btn"
+                        class="text-gray-600 hover:text-sushasan-blue focus:outline-none p-2 rounded-md hover:bg-gray-100 transition-colors"
+                        aria-label="Toggle menu">
+                        <!-- Icon when menu is closed -->
+                        <svg id="menu-icon-closed" class="h-7 w-7 block" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                        <!-- Icon when menu is open -->
+                        <svg id="menu-icon-open" class="h-7 w-7 hidden" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Dropdown -->
+            <div id="mobile-menu"
+                class="hidden md:hidden absolute top-20 left-0 w-full bg-white border-b border-gray-200 shadow-xl overflow-hidden transition-all duration-300 z-40">
+                <nav class="px-4 pt-2 pb-6 space-y-2">
+                    <a href="#about"
+                        class="block px-4 py-3 rounded-md text-base font-medium text-gray-800 hover:text-sushasan-blue hover:bg-gray-50 transition-colors">About
+                        Sushasan</a>
+                    <a href="#pillars"
+                        class="block px-4 py-3 rounded-md text-base font-medium text-gray-800 hover:text-sushasan-blue hover:bg-gray-50 transition-colors">Our
+                        Pillars</a>
+                    <a href="#questions"
+                        class="block px-4 py-3 rounded-md text-base font-medium text-gray-800 hover:text-sushasan-blue hover:bg-gray-50 transition-colors">Governance
+                        Questions</a>
+                    <!-- <a href="#tracker" class="block px-4 py-3 rounded-md text-base font-medium text-gray-800 hover:text-sushasan-blue hover:bg-gray-50 transition-colors">Government Tracker</a>
+                    <a href="#research" class="block px-4 py-3 rounded-md text-base font-medium text-gray-800 hover:text-sushasan-blue hover:bg-gray-50 transition-colors">Research & Analysis</a> -->
+                    <div class="pt-4 pb-2 border-t border-gray-100">
+                        <a href="#participate"
+                            class="block w-full text-center px-4 py-3 rounded-md text-base font-bold bg-sushasan-blue text-white hover:bg-blue-800 transition-colors shadow-sm">Get
+                            Involved</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. Hero Section -->
+        <section class="relative bg-sushasan-blue text-white py-16 sm:py-24 lg:py-32 overflow-hidden px-4">
+            <!-- Subtle background elements -->
+            <div class="absolute inset-0 opacity-10 pointer-events-none flex justify-center items-center">
+                <svg width="600" height="600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.5"
+                    stroke-linecap="round" stroke-linejoin="round" class="transform scale-150 sm:scale-100">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                </svg>
+            </div>
+
+            <div class="max-w-7xl mx-auto relative z-10 text-center">
+                <h1
+                    class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-4 sm:mb-6 leading-tight">
+                    Strengthening Good <br class="hidden sm:block" /> Governance in Nepal
+                </h1>
+                <p
+                    class="mt-4 text-lg sm:text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto mb-8 sm:mb-10 font-light px-2">
+                    A citizen-led platform promoting transparency, accountability, and responsible leadership in public
+                    institutions.
+                </p>
+                <div
+                    class="mt-6 sm:mt-8 flex flex-col sm:flex-row justify-center gap-4 sm:gap-6 w-full max-w-lg mx-auto sm:max-w-none">
+                    <a href="#questions"
+                        class="bg-sushasan-red hover:bg-red-700 text-white font-semibold py-3.5 px-6 sm:px-8 rounded shadow-lg transition-all duration-200 transform hover:-translate-y-0.5 border border-transparent w-full sm:w-auto text-center">
+                        Ask a Governance Question
+                    </a>
+                    <a href="#participate"
+                        class="bg-transparent hover:bg-white/10 text-white font-semibold py-3.5 px-6 sm:px-8 rounded border-2 border-white transition-all duration-200 w-full sm:w-auto text-center">
+                        Join the Community
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. About Sushasan -->
+        <section id="about" class="py-16 sm:py-20 bg-white px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-xs font-bold text-sushasan-red uppercase tracking-wider mb-2">Who We Are</h2>
+                <h3 class="text-2xl sm:text-3xl font-bold text-sushasan-dark mb-4 sm:mb-6">About Sushasan</h3>
+                <p class="text-base sm:text-lg text-gray-600 leading-relaxed mb-6 sm:mb-8 text-left sm:text-center">
+                    Sushasan is an independent, non-partisan civic platform dedicated to improving governance in Nepal.
+                    We believe that true democracy requires active citizen engagement, evidence-based dialogue, and
+                    absolute transparency in public institutions. Our focus is on systems and accountability, not
+                    political parties.
+                </p>
+                <a href="#"
+                    class="inline-flex items-center justify-center text-sushasan-blue font-semibold hover:text-blue-800 transition-colors p-2">
+                    Learn More About Our Mission
+                    <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </a>
+            </div>
+        </section>
+
+        <!-- 3. The Three Pillars -->
+        <section id="pillars" class="py-16 sm:py-20 bg-sushasan-grey px-4">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-10 sm:mb-16">
+                    <h2 class="text-2xl sm:text-3xl font-bold text-sushasan-dark">The Three Pillars</h2>
+                    <div class="w-16 sm:w-24 h-1 bg-sushasan-red mx-auto mt-4"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+                    <!-- Pillar 1: Leadership -->
+                    <div
+                        class="bg-white p-6 sm:p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                        <div
+                            class="w-12 h-12 sm:w-14 sm:h-14 bg-blue-50 rounded-full flex items-center justify-center mb-4 sm:mb-6">
+                            <svg class="w-6 h-6 sm:w-8 sm:h-8 text-sushasan-blue" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                            </svg>
+                        </div>
+                        <h3
+                            class="text-lg sm:text-xl font-bold text-sushasan-dark mb-2 sm:mb-3 flex items-baseline flex-wrap gap-1">
+                            Leadership
+                            <span class="text-gray-500 font-normal text-sm">(नेतृत्व)</span>
+                        </h3>
+                        <p class="text-gray-600 text-sm sm:text-base">Promoting ethical, visionary, and inclusive
+                            leadership across all tiers of governance. We advocate for leaders who prioritize national
+                            interest over personal or partisan gains.</p>
+                    </div>
+
+                    <!-- Pillar 2: Management -->
+                    <div
+                        class="bg-white p-6 sm:p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                        <div
+                            class="w-12 h-12 sm:w-14 sm:h-14 bg-red-50 rounded-full flex items-center justify-center mb-4 sm:mb-6">
+                            <svg class="w-6 h-6 sm:w-8 sm:h-8 text-sushasan-red" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z">
+                                </path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                        </div>
+                        <h3
+                            class="text-lg sm:text-xl font-bold text-sushasan-dark mb-2 sm:mb-3 flex items-baseline flex-wrap gap-1">
+                            Management
+                            <span class="text-gray-500 font-normal text-sm">(व्यवस्थापन)</span>
+                        </h3>
+                        <p class="text-gray-600 text-sm sm:text-base">Encouraging efficient, merit-based, and responsive
+                            public administration. We focus on systemic reforms that improve service delivery to
+                            citizens.</p>
+                    </div>
+
+                    <!-- Pillar 3: Accountability -->
+                    <div
+                        class="bg-white p-6 sm:p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                        <div
+                            class="w-12 h-12 sm:w-14 sm:h-14 bg-blue-50 rounded-full flex items-center justify-center mb-4 sm:mb-6">
+                            <svg class="w-6 h-6 sm:w-8 sm:h-8 text-sushasan-blue" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3
+                            class="text-lg sm:text-xl font-bold text-sushasan-dark mb-2 sm:mb-3 flex items-baseline flex-wrap gap-1">
+                            Accountability
+                            <span class="text-gray-500 font-normal text-sm">(जवाफदेहिता)</span>
+                        </h3>
+                        <p class="text-gray-600 text-sm sm:text-base">Ensuring public officials answer for decisions
+                            affecting citizens. We support mechanisms that prevent corruption and protect institutional
+                            integrity.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Governance Questions -->
+        <section id="questions" class="py-16 sm:py-20 bg-white px-4">
+            <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-10 lg:gap-12">
+                <div class="lg:w-1/3 text-center lg:text-left">
+                    <h2 class="text-2xl sm:text-3xl font-bold text-sushasan-dark mb-3 sm:mb-4">Questions for Good
+                        Governance</h2>
+                    <p class="text-gray-600 mb-6 text-sm sm:text-base">We pose critical, evidence-based questions to
+                        public institutions to drive transparency. Explore our active inquiries or submit your own.</p>
+                    <!-- <a href="#" class="inline-flex items-center justify-center px-6 py-3.5 border-2 border-sushasan-blue text-sushasan-blue font-semibold rounded hover:bg-blue-50 transition-colors w-full sm:w-auto">
+                        View All Questions
+                    </a> -->
+                </div>
+                <div class="lg:w-2/3 space-y-4">
+                    <!-- Question Item -->
+                    <div
+                        class="border border-gray-200 rounded-lg p-4 sm:p-5 hover:border-sushasan-blue transition-colors cursor-pointer group">
+                        <div class="flex items-start justify-between gap-4">
+                            <div>
+                                <span
+                                    class="inline-block px-2.5 py-1 rounded text-xs font-semibold bg-blue-100 text-blue-800 mb-2">Finance</span>
+                                <h4
+                                    class="text-base sm:text-lg font-semibold text-gray-900 group-hover:text-sushasan-blue transition-colors leading-snug">
+                                    How transparent are national infrastructure budgets?</h4>
+                                <p class="text-xs sm:text-sm text-gray-500 mt-1.5">Investigating the accessibility of
+                                    detailed expenditure reports for major national pride projects.</p>
+                            </div>
+                            <svg class="w-5 h-5 text-gray-400 group-hover:text-sushasan-blue mt-1 flex-shrink-0"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                    <!-- Question Item -->
+                    <div
+                        class="border border-gray-200 rounded-lg p-4 sm:p-5 hover:border-sushasan-blue transition-colors cursor-pointer group">
+                        <div class="flex items-start justify-between gap-4">
+                            <div>
+                                <span
+                                    class="inline-block px-2.5 py-1 rounded text-xs font-semibold bg-red-100 text-red-800 mb-2">Procurement</span>
+                                <h4
+                                    class="text-base sm:text-lg font-semibold text-gray-900 group-hover:text-sushasan-blue transition-colors leading-snug">
+                                    What mechanisms ensure accountability in public procurement?</h4>
+                                <p class="text-xs sm:text-sm text-gray-500 mt-1.5">Analyzing the effectiveness of
+                                    current e-bidding processes and conflict-of-interest regulations.</p>
+                            </div>
+                            <svg class="w-5 h-5 text-gray-400 group-hover:text-sushasan-blue mt-1 flex-shrink-0"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                    <!-- Question Item -->
+                    <div
+                        class="border border-gray-200 rounded-lg p-4 sm:p-5 hover:border-sushasan-blue transition-colors cursor-pointer group">
+                        <div class="flex items-start justify-between gap-4">
+                            <div>
+                                <span
+                                    class="inline-block px-2.5 py-1 rounded text-xs font-semibold bg-gray-100 text-gray-800 mb-2">Institutions</span>
+                                <h4
+                                    class="text-base sm:text-lg font-semibold text-gray-900 group-hover:text-sushasan-blue transition-colors leading-snug">
+                                    How are constitutional institutions protected from political interference?</h4>
+                                <p class="text-xs sm:text-sm text-gray-500 mt-1.5">Reviewing the appointment processes
+                                    and operational independence of key watchdog agencies.</p>
+                            </div>
+                            <svg class="w-5 h-5 text-gray-400 group-hover:text-sushasan-blue mt-1 flex-shrink-0"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. Sushasan Charter & 7. Citizen Participation -->
+        <section class="py-16 sm:py-20 bg-sushasan-grey px-4">
+            <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 sm:gap-16 items-center">
+
+                <!-- Charter -->
+                <div class="order-2 md:order-1">
+                    <div class="flex items-center gap-3 mb-4 sm:mb-6 justify-center md:justify-start">
+                        <img src="SUSHASAN.png" alt="Logo icon" class="h-6 sm:h-8 w-auto object-contain" loading="lazy"
+                            onerror="this.style.display='none'">
+                        <h2 class="text-2xl sm:text-3xl font-bold text-sushasan-dark">The Sushasan Charter</h2>
+                    </div>
+                    <p class="text-gray-600 mb-6 sm:mb-8 text-sm sm:text-base text-center md:text-left">Our movement is
+                        guided by unwavering principles that place the citizen at the center of the state. We commit to:
+                    </p>
+
+                    <ul class="space-y-3 sm:space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <svg class="h-5 w-5 sm:h-6 sm:w-6 text-sushasan-red mt-0.5 mr-3 shrink-0" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span class="text-gray-800 font-medium text-sm sm:text-base">Absolute Transparency in public
+                                affairs.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-5 w-5 sm:h-6 sm:w-6 text-sushasan-red mt-0.5 mr-3 shrink-0" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span class="text-gray-800 font-medium text-sm sm:text-base">Uncompromising Accountability
+                                of elected and appointed officials.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-5 w-5 sm:h-6 sm:w-6 text-sushasan-red mt-0.5 mr-3 shrink-0" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span class="text-gray-800 font-medium text-sm sm:text-base">Upholding the Rule of Law
+                                without exception.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-5 w-5 sm:h-6 sm:w-6 text-sushasan-red mt-0.5 mr-3 shrink-0" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span class="text-gray-800 font-medium text-sm sm:text-base">Meaningful Citizen
+                                Participation in policy making.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-5 w-5 sm:h-6 sm:w-6 text-sushasan-red mt-0.5 mr-3 shrink-0" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span class="text-gray-800 font-medium text-sm sm:text-base">Fostering Ethical Leadership
+                                across all sectors.</span>
+                        </li>
+                    </ul>
+                    <div class="text-center md:text-left">
+                        <a href="#" class="text-sushasan-blue font-semibold hover:underline inline-block p-2 -ml-2">Read
+                            the Full Charter</a>
+                    </div>
+                </div>
+
+                <!-- Participation Banner -->
+                <div id="participate"
+                    class="order-1 md:order-2 bg-blue-50 p-6 sm:p-10 rounded-xl border border-blue-100 text-center relative overflow-hidden">
+                    <div
+                        class="absolute top-0 right-0 -mt-4 -mr-4 w-20 sm:w-24 h-20 sm:h-24 bg-blue-100 rounded-full opacity-50">
+                    </div>
+                    <div
+                        class="absolute bottom-0 left-0 -mb-4 -ml-4 w-12 sm:w-16 h-12 sm:h-16 bg-blue-100 rounded-full opacity-50">
+                    </div>
+
+                    <h3 class="text-xl sm:text-2xl font-bold text-sushasan-blue mb-3 sm:mb-4 relative z-10">Take Action
+                        for Governance</h3>
+                    <p class="text-sm sm:text-base text-gray-600 mb-6 sm:mb-8 relative z-10">Democracy is not a
+                        spectator sport. Your engagement is the strongest mechanism for accountability.</p>
+
+                    <div class="space-y-3 relative z-10 text-left max-w-[280px] sm:max-w-xs mx-auto mb-6 sm:mb-8">
+                        <label class="flex items-center space-x-3 cursor-pointer group p-1">
+                            <div
+                                class="w-5 h-5 rounded-full border border-gray-400 group-hover:border-sushasan-blue flex items-center justify-center shrink-0">
+                                <div class="w-2.5 h-2.5 rounded-full bg-sushasan-blue hidden"></div>
+                            </div>
+                            <span class="text-gray-700 text-sm sm:text-base">Submit a governance question</span>
+                        </label>
+                        <label class="flex items-center space-x-3 cursor-pointer group p-1">
+                            <div
+                                class="w-5 h-5 rounded-full border border-gray-400 group-hover:border-sushasan-blue flex items-center justify-center shrink-0">
+                                <div class="w-2.5 h-2.5 rounded-full bg-sushasan-blue hidden"></div>
+                            </div>
+                            <span class="text-gray-700 text-sm sm:text-base">Participate in public discussions</span>
+                        </label>
+                        <label class="flex items-center space-x-3 cursor-pointer group p-1">
+                            <div
+                                class="w-5 h-5 rounded-full border border-gray-400 group-hover:border-sushasan-blue flex items-center justify-center shrink-0">
+                                <div class="w-2.5 h-2.5 rounded-full bg-sushasan-blue hidden"></div>
+                            </div>
+                            <span class="text-gray-700 text-sm sm:text-base">Volunteer as a contributor</span>
+                        </label>
+                    </div>
+
+                    <button
+                        class="bg-sushasan-blue hover:bg-blue-800 text-white font-semibold py-3.5 px-6 sm:px-8 rounded shadow w-full transition-colors relative z-10 text-sm sm:text-base">
+                        Become a Contributor
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 10. Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-10 sm:py-12 border-t border-gray-800 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 sm:gap-10">
+                <!-- Branding -->
+                <div class="col-span-1 sm:col-span-2 md:col-span-1 text-center sm:text-left">
+                    <img src="SUSHASAN.png" alt="Sushasan Logo"
+                        class="h-10 w-auto object-contain bg-white p-1 rounded mb-4 mx-auto sm:mx-0" loading="lazy"
+                        onerror="this.style.display='none'">
+                    <h2 class="text-xl font-bold text-white mb-2 font-sans tracking-wide">सुशासन</h2>
+                    <p class="text-xs sm:text-sm text-gray-400 mb-4">नेतृत्व | व्यवस्थापन | जवाफदेहिता</p>
+                    <p class="text-xs sm:text-sm text-gray-500 leading-relaxed max-w-sm mx-auto sm:mx-0">
+                        An independent civic platform dedicated to institutional accountability and good governance in
+                        Nepal.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="text-center sm:text-left">
+                    <h4 class="text-white font-semibold mb-3 sm:mb-4 uppercase text-xs sm:text-sm tracking-wider">
+                        Platform</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#about" class="hover:text-white transition-colors block py-1">About Sushasan</a>
+                        </li>
+                        <li><a href="#pillars" class="hover:text-white transition-colors block py-1">Our Pillars</a>
+                        </li>
+                        <li><a href="#questions" class="hover:text-white transition-colors block py-1">Governance
+                                Questions</a></li>
+                        <!-- <li><a href="#tracker" class="hover:text-white transition-colors block py-1">Government Tracker</a></li> -->
+                        <li><a href="#" class="hover:text-white transition-colors block py-1">Sushasan Charter</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div class="text-center sm:text-left">
+                    <h4 class="text-white font-semibold mb-3 sm:mb-4 uppercase text-xs sm:text-sm tracking-wider">
+                        Resources</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#research" class="hover:text-white transition-colors block py-1">Research &
+                                Reports</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors block py-1">Civic Education</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors block py-1">Policy Discussions</a>
+                        </li>
+                        <li><a href="#" class="hover:text-white transition-colors block py-1">News & Updates</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact & Social -->
+                <div class="text-center sm:text-left">
+                    <h4 class="text-white font-semibold mb-3 sm:mb-4 uppercase text-xs sm:text-sm tracking-wider">
+                        Connect</h4>
+                    <ul class="space-y-3 text-sm mb-6 flex flex-col items-center sm:items-start">
+                        <li class="flex items-center gap-2">
+                            <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                            <a href="mailto:info@sushasan.org"
+                                class="hover:text-white transition-colors py-1">info@sushasan.org</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9">
+                                </path>
+                            </svg>
+                            <a href="https://www.sushasan.org"
+                                class="hover:text-white transition-colors py-1">www.sushasan.org</a>
+                        </li>
+                    </ul>
+                    <div class="flex space-x-5 justify-center sm:justify-start">
+                        <!-- Twitter/X Icon -->
+                        <a href="https://x.com/sushasanorg" target="_blank"
+                            class="text-gray-400 hover:text-white transition-colors p-1" aria-label="Twitter">
+                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                            </svg>
+                        </a>
+                        <!-- Facebook Icon -->
+                        <a href="https://www.facebook.com/sushasanorg.np" target="_blank"
+                            class="text-gray-400 hover:text-white transition-colors p-1" aria-label="Facebook">
+                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd"
+                                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="mt-10 sm:mt-12 pt-6 sm:pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500 text-center sm:text-left">
+                <p>&copy; 2026 Sushasan (सुशासन). All rights reserved.</p>
+                <div class="flex flex-wrap justify-center sm:justify-start space-x-4 sm:space-x-6">
+                    <a href="#" class="hover:text-gray-300 py-1">Privacy Policy</a>
+                    <a href="#" class="hover:text-gray-300 py-1">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Scripts for Mobile UI -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const iconClosed = document.getElementById('menu-icon-closed');
+            const iconOpen = document.getElementById('menu-icon-open');
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+
+            // Toggle menu open/close
+            menuBtn.addEventListener('click', () => {
+                const isHidden = mobileMenu.classList.contains('hidden');
+
+                if (isHidden) {
+                    mobileMenu.classList.remove('hidden');
+                    iconClosed.classList.add('hidden');
+                    iconClosed.classList.remove('block');
+                    iconOpen.classList.remove('hidden');
+                    iconOpen.classList.add('block');
+                } else {
+                    closeMenu();
+                }
+            });
+
+            // Close menu function
+            function closeMenu() {
+                mobileMenu.classList.add('hidden');
+                iconClosed.classList.remove('hidden');
+                iconClosed.classList.add('block');
+                iconOpen.classList.add('hidden');
+                iconOpen.classList.remove('block');
+            }
+
+            // Close menu when a link is clicked
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', closeMenu);
+            });
+        });
+    </script>
+</body>
+
+</html>
