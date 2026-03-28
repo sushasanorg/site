@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nepal Government Cabinet (2026–Present) | Sushasan</title>
+    <meta name="description"
+        content="Detailed overview of the Balen Shah Cabinet, the current Council of Ministers of Nepal formed in 2026.">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="SUSHASAN.png">
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        sushasan: {
+                            blue: '#0d2d6c',
+                            red: '#d81c3f',
+                            grey: '#f3f4f6',
+                            dark: '#1f2937'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .custom-scrollbar::-webkit-scrollbar {
+            height: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+        .cabinet-card:hover {
+            transform: translateY(-2px);
+            transition: all 0.2s ease-in-out;
+        }
+    </style>
+</head>
+
+<body
+    class="font-sans text-gray-800 antialiased bg-gray-50 selection:bg-sushasan-red selection:text-white flex flex-col min-h-screen">
+
+    <!-- Top Accent Bar -->
+    <div class="h-1 bg-sushasan-red w-full"></div>
+
+    <!-- Navigation -->
+    <header class="sticky top-0 bg-white/95 backdrop-blur-sm shadow-sm z-50 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <img src="SUSHASAN.png" alt="Sushasan Logo" class="h-12 sm:h-14 w-auto object-contain"
+                            loading="lazy">
+                    </a>
+                </div>
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="index.html#about"
+                        class="text-gray-600 hover:text-sushasan-blue font-medium transition-colors">About</a>
+                    <a href="index.html#pillars"
+                        class="text-gray-600 hover:text-sushasan-blue font-medium transition-colors">Pillars</a>
+                    <a href="index.html#questions"
+                        class="text-gray-600 hover:text-sushasan-blue font-medium transition-colors">Questions</a>
+                    <a href="house-of-representative-members.html"
+                        class="text-gray-600 hover:text-sushasan-blue font-medium transition-colors">HoR Members</a>
+                    <a href="nepal-government-cabinet.html"
+                        class="text-sushasan-blue font-bold transition-colors border-b-2 border-sushasan-blue py-1">Cabinet 2026</a>
+                    <a href="index.html#participate"
+                        class="bg-sushasan-blue text-white px-5 py-2.5 rounded hover:bg-blue-800 transition-colors font-medium">Get
+                        Involved</a>
+                </nav>
+                <!-- Mobile menu button -->
+                <div class="flex items-center md:hidden">
+                    <button type="button" id="mobile-menu-btn"
+                        class="text-gray-600 hover:text-sushasan-blue focus:outline-none p-2 rounded-md hover:bg-gray-100 transition-colors"
+                        aria-label="Toggle menu">
+                        <svg id="menu-icon-closed" class="h-7 w-7 block" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                        <svg id="menu-icon-open" class="h-7 w-7 hidden" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Dropdown -->
+            <div id="mobile-menu"
+                class="hidden md:hidden absolute top-20 left-0 w-full bg-white border-b border-gray-200 shadow-xl overflow-hidden transition-all duration-300 z-40">
+                <nav class="px-4 pt-2 pb-6 space-y-2">
+                    <a href="index.html#about"
+                        class="block px-4 py-3 rounded-md text-base font-medium text-gray-800 hover:text-sushasan-blue hover:bg-gray-50 transition-colors">About
+                        Sushasan</a>
+                    <a href="index.html#pillars"
+                        class="block px-4 py-3 rounded-md text-base font-medium text-gray-800 hover:text-sushasan-blue hover:bg-gray-50 transition-colors">Our
+                        Pillars</a>
+                    <a href="index.html#questions"
+                        class="block px-4 py-3 rounded-md text-base font-medium text-gray-800 hover:text-sushasan-blue hover:bg-gray-50 transition-colors">Governance
+                        Questions</a>
+                    <a href="house-of-representative-members.html"
+                        class="block px-4 py-3 rounded-md text-base font-medium text-gray-800 hover:text-sushasan-blue hover:bg-gray-50 transition-colors">HoR
+                        Members</a>
+                    <a href="nepal-government-cabinet.html"
+                        class="block px-4 py-3 rounded-md text-base font-medium text-gray-800 hover:text-sushasan-blue hover:bg-gray-50 transition-colors">Cabinet 2026</a>
+                    <div class="pt-4 pb-2 border-t border-gray-100">
+                        <a href="index.html#participate"
+                            class="block w-full text-center px-4 py-3 rounded-md text-base font-bold bg-sushasan-blue text-white hover:bg-blue-800 transition-colors shadow-sm">Get
+                            Involved</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow pb-20">
+        <!-- Header Banner -->
+        <div class="bg-sushasan-blue text-white py-12 px-4 shadow-inner">
+            <div class="max-w-7xl mx-auto text-center md:text-left md:flex justify-between items-end">
+                <div>
+                    <h1 class="text-3xl md:text-4xl font-bold mb-2">Nepal Government Cabinet (2026–Present)</h1>
+                    <p class="text-blue-100 text-lg">Council of Ministers led by Prime Minister Balendra Shah</p>
+                </div>
+                <div
+                    class="mt-4 md:mt-0 flex items-center justify-center md:justify-end gap-2 bg-white/10 px-4 py-2 rounded border border-white/20">
+                    <span class="w-3 h-3 bg-green-400 rounded-full animate-pulse"></span>
+                    <span class="text-sm font-medium">Majority Government (RSP)</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-6">
+            <!-- Overview Card -->
+            <div class="bg-white rounded-xl shadow-md border border-gray-100 p-6 sm:p-8 mb-8">
+                <div class="flex flex-col md:flex-row gap-8 items-start">
+                    <div class="md:w-2/3">
+                        <h2 class="text-2xl font-bold text-sushasan-dark mb-4">Overview</h2>
+                        <p class="text-gray-600 leading-relaxed mb-4">
+                            The <strong>Balen Shah Cabinet</strong> is the current Council of Ministers of Nepal, formed on 
+                            <strong>27 March 2026</strong> following the general election held on 5 March 2026. 
+                            The government represents a major generational shift, with a significant number of ministers under the age of 40 and a strong focus on technocratic and reform-oriented leadership.
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+                            <div class="bg-blue-50 p-4 rounded-lg border border-blue-100">
+                                <p class="text-sm text-blue-600 font-semibold uppercase tracking-wider">Prime Minister</p>
+                                <p class="text-xl font-bold text-sushasan-blue">Balendra (Balen) Shah</p>
+                            </div>
+                            <div class="bg-red-50 p-4 rounded-lg border border-red-100">
+                                <p class="text-sm text-red-600 font-semibold uppercase tracking-wider">Cabinet Size</p>
+                                <p class="text-xl font-bold text-sushasan-red">15 Members</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                                <p class="text-sm text-gray-500 font-semibold uppercase tracking-wider">President</p>
+                                <p class="text-lg font-bold text-gray-800">Ram Chandra Paudel</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                                <p class="text-sm text-gray-500 font-semibold uppercase tracking-wider">Legislature</p>
+                                <p class="text-lg font-bold text-gray-800">7th Pratinidhi Sabha</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-1/3 w-full bg-sushasan-grey rounded-xl p-6 border border-gray-200">
+                        <h3 class="font-bold text-sushasan-dark mb-4 flex items-center gap-2">
+                            <svg class="w-5 h-5 text-sushasan-red" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z"></path>
+                            </svg>
+                            Key Stats
+                        </h3>
+                        <ul class="space-y-4">
+                            <li class="flex justify-between items-center">
+                                <span class="text-gray-600">Youth (Under 40)</span>
+                                <span class="font-bold text-sushasan-blue text-lg">2/3</span>
+                            </li>
+                            <li class="flex justify-between items-center">
+                                <span class="text-gray-600">Women Ministers</span>
+                                <span class="font-bold text-sushasan-blue text-lg">5</span>
+                            </li>
+                            <li class="flex justify-between items-center">
+                                <span class="text-gray-600">Political Party</span>
+                                <span class="font-bold text-sushasan-blue text-lg">RSP</span>
+                            </li>
+                        </ul>
+                        <div class="mt-6 pt-6 border-t border-gray-200">
+                            <p class="text-sm text-gray-500 italic">"A youth-driven leadership model for modern governance."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Council of Ministers -->
+            <div class="mb-12">
+                <div class="flex justify-between items-center mb-8">
+                    <h2 class="text-2xl font-bold text-sushasan-dark">Council of Ministers</h2>
+                    <span class="text-xs font-bold text-gray-400 uppercase tracking-widest">15 Members</span>
+                </div>
+
+                <!-- Grid Container -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- 1. Prime Minister -->
+                    <div class="bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden cabinet-card flex flex-col h-full border-t-4 border-t-sushasan-red lg:col-span-1">
+                        <div class="p-6 flex-grow">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="w-16 h-16 rounded-full overflow-hidden bg-sushasan-blue shrink-0 shadow-inner border border-gray-100">
+                                    <img src="images/balendra_shah.jpg" alt="Balendra (Balen) Shah" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                    <div class="w-full h-full items-center justify-center text-white text-xl font-bold hidden">BS</div>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-sushasan-dark">Balendra (Balen) Shah</h3>
+                                    <p class="text-sushasan-red font-bold text-sm">Prime Minister</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="px-2 py-0.5 bg-blue-50 text-blue-600 text-[10px] font-bold rounded uppercase tracking-wider">RSP</span>
+                                <span class="px-2 py-0.5 bg-blue-50 text-blue-600 text-[10px] font-bold rounded uppercase tracking-wider">Prime Minister</span>
+                                <span class="px-2 py-0.5 bg-blue-50 text-blue-600 text-[10px] font-bold rounded uppercase tracking-wider">Youth Leader</span>
+                                <span class="px-2 py-0.5 bg-blue-50 text-blue-600 text-[10px] font-bold rounded uppercase tracking-wider">Engineer</span>
+                            </div>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                One of the youngest Prime Ministers in Nepali history. A structural engineer by profession, he leads the cabinet with a strong focus on technocratic governance, anti-corruption, and infrastructural reform following the 2026 youth-led movements.
+                            </p>
+                        </div>
+                        <div class="px-6 py-3 bg-gray-50 border-t border-gray-100 flex justify-between items-center">
+                            <span class="text-xs font-bold text-gray-400 uppercase tracking-wider">Age: 36</span>
+                            <span class="text-[10px] font-bold text-white bg-sushasan-blue px-2 py-0.5 rounded">LEADERSHIP</span>
+                        </div>
+                    </div>
+
+                    <!-- 2. Finance -->
+                    <div class="bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden cabinet-card flex flex-col h-full">
+                        <div class="p-6 flex-grow">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="w-16 h-16 rounded-full overflow-hidden bg-gray-200 shrink-0 border border-gray-100">
+                                    <img src="images/swarnim_wagle.jpg" alt="Dr. Swarnim Wagle" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                    <div class="w-full h-full items-center justify-center text-gray-500 text-xl font-bold hidden">SW</div>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-sushasan-dark">Dr. Swarnim Wagle</h3>
+                                    <p class="text-sushasan-blue font-semibold text-sm">Minister of Finance</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="px-2 py-0.5 bg-gray-100 text-gray-600 text-[10px] font-bold rounded uppercase tracking-wider">RSP</span>
+                                <span class="px-2 py-0.5 bg-gray-100 text-gray-600 text-[10px] font-bold rounded uppercase tracking-wider">Economist</span>
+                                <span class="px-2 py-0.5 bg-gray-100 text-gray-600 text-[10px] font-bold rounded uppercase tracking-wider">Technocrat</span>
+                            </div>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                A globally renowned economist with extensive experience in international development. He is the chief architect behind the cabinet’s economic growth, public service efficiency, and financial reform policies.
+                            </p>
+                        </div>
+                        <div class="px-6 py-3 bg-gray-50 border-t border-gray-100 flex justify-between items-center">
+                            <span class="text-xs font-bold text-gray-400 uppercase tracking-wider">Age: 52</span>
+                        </div>
+                    </div>
+
+                    <!-- 3. Home Affairs -->
+                    <div class="bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden cabinet-card flex flex-col h-full">
+                        <div class="p-6 flex-grow">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="w-16 h-16 rounded-full overflow-hidden bg-gray-200 shrink-0 border border-gray-100">
+                                    <img src="images/sudan_gurung.jpg" alt="Sudan Gurung" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                    <div class="w-full h-full items-center justify-center text-gray-500 text-xl font-bold hidden">SG</div>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-sushasan-dark">Sudan Gurung</h3>
+                                    <p class="text-sushasan-blue font-semibold text-sm">Minister of Home Affairs</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="px-2 py-0.5 bg-gray-100 text-gray-600 text-[10px] font-bold rounded uppercase tracking-wider">RSP</span>
+                                <span class="px-2 py-0.5 bg-gray-100 text-gray-600 text-[10px] font-bold rounded uppercase tracking-wider">Security</span>
+                                <span class="px-2 py-0.5 bg-gray-100 text-gray-600 text-[10px] font-bold rounded uppercase tracking-wider">Internal Affairs</span>
+                            </div>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                Focused on modernizing national security and law enforcement. He plays a crucial role in executing the cabinet's strict anti-corruption mandate and ensuring transparent public administration.
+                            </p>
+                        </div>
+                        <div class="px-6 py-3 bg-gray-50 border-t border-gray-100 flex justify-between items-center">
+                            <span class="text-xs font-bold text-gray-400 uppercase tracking-wider">Age: 38</span>
+                        </div>
+                    </div>
+
+                    <!-- 4. Foreign Affairs -->
+                    <div class="bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden cabinet-card flex flex-col h-full">
+                        <div class="p-6 flex-grow">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="w-16 h-16 rounded-full overflow-hidden bg-gray-200 shrink-0 border border-gray-100">
+                                    <img src="images/shishir_khanal.jpg" alt="Shishir Khanal" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                    <div class="w-full h-full items-center justify-center text-gray-500 text-xl font-bold hidden">SK</div>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-sushasan-dark">Shishir Khanal</h3>
+                                    <p class="text-sushasan-blue font-semibold text-sm">Minister of Foreign Affairs</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="px-2 py-0.5 bg-gray-100 text-gray-600 text-[10px] font-bold rounded uppercase tracking-wider">RSP</span>
+                                <span class="px-2 py-0.5 bg-gray-100 text-gray-600 text-[10px] font-bold rounded uppercase tracking-wider">Diplomacy</span>
+                                <span class="px-2 py-0.5 bg-gray-100 text-gray-600 text-[10px] font-bold rounded uppercase tracking-wider">International Relations</span>
+                            </div>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                Brings deep expertise in public policy and global partnerships. His primary focus is on balanced international diplomacy, securing foreign investments for infrastructure, and elevating Nepal's global standing.
+                            </p>
+                        </div>
+                        <div class="px-6 py-3 bg-gray-50 border-t border-gray-100 flex justify-between items-center">
+                            <span class="text-xs font-bold text-gray-400 uppercase tracking-wider">Age: 46</span>
+                        </div>
+                    </div>
+
+                    <!-- 5. Physical Infrastructure -->
+                    <div class="bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden cabinet-card flex flex-col h-full">
+                        <div class="p-6 flex-grow">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="w-16 h-16 rounded-full overflow-hidden bg-gray-200 shrink-0 border border-gray-100">
+                                    <img src="images/sunil_lamsal.jpg" alt="Sunil Lamsal" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                    <div class="w-full h-full items-center justify-center text-gray-500 text-xl font-bold hidden">SL</div>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-sushasan-dark">Sunil Lamsal</h3>
+                                    <p class="text-sushasan-blue font-semibold text-sm">Minister of Physical Infrastructure & Transport</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="px-2 py-0.5 bg-gray-100 text-gray-600 text-[10px] font-bold rounded uppercase tracking-wider">RSP</span>
+                                <span class="px-2 py-0.5 bg-gray-100 text-gray-600 text-[10px] font-bold rounded uppercase tracking-wider">Infrastructure</span>
+                                <span class="px-2 py-0.5 bg-gray-100 text-gray-600 text-[10px] font-bold rounded uppercase tracking-wider">Engineering</span>
+                            </div>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                An engineering expert dedicated to overhauling Nepal's transportation networks. He is tasked with fast-tracking delayed national pride projects and improving public transit systems.
+                            </p>
+                        </div>
+                        <div class="px-6 py-3 bg-gray-50 border-t border-gray-100 flex justify-between items-center">
+                            <span class="text-xs font-bold text-gray-400 uppercase tracking-wider">Age: 35</span>
+                        </div>
+                    </div>
+
+                    <!-- 6. Education -->
+                    <div class="bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden cabinet-card flex flex-col h-full">
+                        <div class="p-6 flex-grow">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="w-16 h-16 rounded-full overflow-hidden bg-gray-200 shrink-0 border border-gray-100">
+                                    <img src="images/sasmita_pokharel.jpg" alt="Sasmita Pokharel" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                    <div class="w-full h-full items-center justify-center text-gray-500 text-xl font-bold hidden">SP</div>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-sushasan-dark">Sasmita Pokharel</h3>
+                                    <p class="text-sushasan-blue font-semibold text-sm">Minister of Education, Science & Technology</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="px-2 py-0.5 bg-gray-100 text-gray-600 text-[10px] font-bold rounded uppercase tracking-wider">RSP</span>
+                                <span class="px-2 py-0.5 bg-gray-100 text-gray-600 text-[10px] font-bold rounded uppercase tracking-wider">Education Reform</span>
+                                <span class="px-2 py-0.5 bg-gray-100 text-gray-600 text-[10px] font-bold rounded uppercase tracking-wider">Youth & Sports</span>
+                            </div>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                A strong advocate for integrating modern technology into the public school curriculum. She also oversees the Youth & Sports portfolio, driving initiatives to empower the younger demographic.
+                            </p>
+                        </div>
+                        <div class="px-6 py-3 bg-gray-50 border-t border-gray-100 flex justify-between items-center">
+                            <span class="text-xs font-bold text-gray-400 uppercase tracking-wider">Age: 34</span>
+                            <span class="text-[10px] font-bold text-blue-600 bg-blue-50 px-2 py-0.5 rounded uppercase tracking-tighter">Additional Portfolio: Youth & Sports</span>
+                        </div>
+                    </div>
+
+                    <!-- 7. Tourism -->
+                    <div class="bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden cabinet-card flex flex-col h-full">
+                        <div class="p-6 flex-grow">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="w-16 h-16 rounded-full overflow-hidden bg-gray-200 shrink-0 border border-gray-100">
+                                    <img src="images/khadak_raj_poudel.jpeg" alt="Khadak Raj Poudel" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                    <div class="w-full h-full items-center justify-center text-gray-500 text-xl font-bold hidden">KP</div>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-sushasan-dark">Khadak Raj Poudel</h3>
+                                    <p class="text-sushasan-blue font-semibold text-sm">Minister of Culture, Tourism & Civil Aviation</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="px-2 py-0.5 bg-gray-100 text-gray-600 text-[10px] font-bold rounded uppercase tracking-wider">RSP</span>
+                                <span class="px-2 py-0.5 bg-gray-100 text-gray-600 text-[10px] font-bold rounded uppercase tracking-wider">Tourism</span>
+                                <span class="px-2 py-0.5 bg-gray-100 text-gray-600 text-[10px] font-bold rounded uppercase tracking-wider">Cultural Heritage</span>
+                            </div>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                Tasked with revitalizing Nepal’s vital tourism industry post-2025. His reform priorities include upgrading civil aviation safety standards and promoting sustainable, high-value tourism.
+                            </p>
+                        </div>
+                        <div class="px-6 py-3 bg-gray-50 border-t border-gray-100 flex justify-between items-center">
+                            <span class="text-xs font-bold text-gray-400 uppercase tracking-wider">Age: 42</span>
+                        </div>
+                    </div>
+
+                    <!-- 8. Health -->
+                    <div class="bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden cabinet-card flex flex-col h-full">
+                        <div class="p-6 flex-grow">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="w-16 h-16 rounded-full overflow-hidden bg-gray-200 shrink-0 border border-gray-100">
+                                    <img src="images/nisha_mahato.webp" alt="Nisha Mahato" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                    <div class="w-full h-full items-center justify-center text-gray-500 text-xl font-bold hidden">NM</div>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-sushasan-dark">Nisha Mahato</h3>
+                                    <p class="text-sushasan-blue font-semibold text-sm">Minister of Health & Population (Additional Portfolio: Drinking Water)</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="px-2 py-0.5 bg-gray-100 text-gray-600 text-[10px] font-bold rounded uppercase tracking-wider">RSP</span>
+                                <span class="px-2 py-0.5 bg-gray-100 text-gray-600 text-[10px] font-bold rounded uppercase tracking-wider">Public Health</span>
+                                <span class="px-2 py-0.5 bg-gray-100 text-gray-600 text-[10px] font-bold rounded uppercase tracking-wider">Sanitation</span>
+                            </div>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                A public health specialist focused on expanding accessible healthcare to rural areas. She also manages the Drinking Water portfolio, ensuring nationwide access to safe and clean water.
+                            </p>
+                        </div>
+                        <div class="px-6 py-3 bg-gray-50 border-t border-gray-100 flex justify-between items-center">
+                            <span class="text-xs font-bold text-gray-400 uppercase tracking-wider">Age: 37</span>
+                            <span class="text-[10px] font-bold text-blue-600 bg-blue-50 px-2 py-0.5 rounded uppercase tracking-tighter">Additional Portfolio: Drinking Water</span>
+                        </div>
+                    </div>
+
+                    <!-- 9. Energy -->
+                    <div class="bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden cabinet-card flex flex-col h-full">
+                        <div class="p-6 flex-grow">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="w-16 h-16 rounded-full overflow-hidden bg-gray-200 shrink-0 border border-gray-100">
+                                    <img src="images/biraj_bhakta_shrestha.jpg" alt="Biraj Bhakta Shrestha" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                    <div class="w-full h-full items-center justify-center text-gray-500 text-xl font-bold hidden">BS</div>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-sushasan-dark">Biraj Bhakta Shrestha</h3>
+                                    <p class="text-sushasan-blue font-semibold text-sm">Minister of Energy, Water Resources & Irrigation</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="px-2 py-0.5 bg-gray-100 text-gray-600 text-[10px] font-bold rounded uppercase tracking-wider">RSP</span>
+                                <span class="px-2 py-0.5 bg-gray-100 text-gray-600 text-[10px] font-bold rounded uppercase tracking-wider">Sustainable Energy</span>
+                                <span class="px-2 py-0.5 bg-gray-100 text-gray-600 text-[10px] font-bold rounded uppercase tracking-wider">Hydropower</span>
+                            </div>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                A passionate environmentalist and experienced leader managing Nepal's rich water resources. His focus is on sustainable hydropower development and expanding reliable irrigation for farmers.
+                            </p>
+                        </div>
+                        <div class="px-6 py-3 bg-gray-50 border-t border-gray-100 flex justify-between items-center">
+                            <span class="text-xs font-bold text-gray-400 uppercase tracking-wider">Age: 45</span>
+                        </div>
+                    </div>
+
+                    <!-- 10. Communication -->
+                    <div class="bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden cabinet-card flex flex-col h-full">
+                        <div class="p-6 flex-grow">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="w-16 h-16 rounded-full overflow-hidden bg-gray-200 shrink-0 border border-gray-100">
+                                    <img src="images/bikram_timilsina.jpg" alt="Dr. Bikram Timilsina" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                    <div class="w-full h-full items-center justify-center text-gray-500 text-xl font-bold hidden">BT</div>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-sushasan-dark">Dr. Bikram Timilsina</h3>
+                                    <p class="text-sushasan-blue font-semibold text-sm">Minister of Communication & Information Technology</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="px-2 py-0.5 bg-gray-100 text-gray-600 text-[10px] font-bold rounded uppercase tracking-wider">RSP</span>
+                                <span class="px-2 py-0.5 bg-gray-100 text-gray-600 text-[10px] font-bold rounded uppercase tracking-wider">Digital Transformation</span>
+                                <span class="px-2 py-0.5 bg-gray-100 text-gray-600 text-[10px] font-bold rounded uppercase tracking-wider">IT</span>
+                            </div>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                A tech innovator spearheading the digitalization of government services. His goal is to create a seamless e-governance ecosystem to improve public service delivery and transparency.
+                            </p>
+                        </div>
+                        <div class="px-6 py-3 bg-gray-50 border-t border-gray-100 flex justify-between items-center">
+                            <span class="text-xs font-bold text-gray-400 uppercase tracking-wider">Age: 39</span>
+                        </div>
+                    </div>
+
+                    <!-- 11. Federal Affairs -->
+                    <div class="bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden cabinet-card flex flex-col h-full">
+                        <div class="p-6 flex-grow">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="w-16 h-16 rounded-full overflow-hidden bg-gray-200 shrink-0 border border-gray-100">
+                                    <img src="images/pratibha_rawal.jpg" alt="Pratibha Rawal" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                    <div class="w-full h-full items-center justify-center text-gray-500 text-xl font-bold hidden">PR</div>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-sushasan-dark">Pratibha Rawal</h3>
+                                    <p class="text-sushasan-blue font-semibold text-sm">Minister of Federal Affairs & General Administration</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="px-2 py-0.5 bg-gray-100 text-gray-600 text-[10px] font-bold rounded uppercase tracking-wider">RSP</span>
+                                <span class="px-2 py-0.5 bg-gray-100 text-gray-600 text-[10px] font-bold rounded uppercase tracking-wider">Public Administration</span>
+                                <span class="px-2 py-0.5 bg-gray-100 text-gray-600 text-[10px] font-bold rounded uppercase tracking-wider">Land Management</span>
+                            </div>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                Expert in federal governance and decentralization. She holds critical additional portfolios aimed at modernizing land management and implementing targeted poverty alleviation programs.
+                            </p>
+                        </div>
+                        <div class="px-6 py-3 bg-gray-50 border-t border-gray-100 flex justify-between items-center">
+                            <span class="text-xs font-bold text-gray-400 uppercase tracking-wider">Age: 36</span>
+                            <span class="text-[10px] font-bold text-blue-600 bg-blue-50 px-2 py-0.5 rounded uppercase tracking-tighter">Additional Portfolio: Land Mgmt & Poverty Alleviation</span>
+                        </div>
+                    </div>
+
+                    <!-- 12. Labour -->
+                    <div class="bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden cabinet-card flex flex-col h-full">
+                        <div class="p-6 flex-grow">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="w-16 h-16 rounded-full overflow-hidden bg-gray-200 shrink-0 border border-gray-100">
+                                    <img src="images/dipak_kumar_sah.png" alt="Dipak Kumar Sah" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                    <div class="w-full h-full items-center justify-center text-gray-500 text-xl font-bold hidden">DS</div>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-sushasan-dark">Dipak Kumar Sah</h3>
+                                    <p class="text-sushasan-blue font-semibold text-sm">Minister of Labour, Employment & Social Security</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="px-2 py-0.5 bg-gray-100 text-gray-600 text-[10px] font-bold rounded uppercase tracking-wider">RSP</span>
+                                <span class="px-2 py-0.5 bg-gray-100 text-gray-600 text-[10px] font-bold rounded uppercase tracking-wider">Labor Rights</span>
+                                <span class="px-2 py-0.5 bg-gray-100 text-gray-600 text-[10px] font-bold rounded uppercase tracking-wider">Social Welfare</span>
+                            </div>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                Dedicated to domestic job creation to retain youth in Nepal. He is also a strong advocate for the safety, rights, and fair compensation of Nepali migrant workers abroad.
+                            </p>
+                        </div>
+                        <div class="px-6 py-3 bg-gray-50 border-t border-gray-100 flex justify-between items-center">
+                            <span class="text-xs font-bold text-gray-400 uppercase tracking-wider">Age: 39</span>
+                        </div>
+                    </div>
+
+                    <!-- 13. Law -->
+                    <div class="bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden cabinet-card flex flex-col h-full">
+                        <div class="p-6 flex-grow">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="w-16 h-16 rounded-full overflow-hidden bg-gray-200 shrink-0 border border-gray-100">
+                                    <img src="images/sobita_gautam.jpg" alt="Sobita Gautam" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                    <div class="w-full h-full items-center justify-center text-gray-500 text-xl font-bold hidden">SG</div>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-sushasan-dark">Sobita Gautam</h3>
+                                    <p class="text-sushasan-blue font-semibold text-sm">Minister of Law, Justice & Parliamentary Affairs</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="px-2 py-0.5 bg-gray-100 text-gray-600 text-[10px] font-bold rounded uppercase tracking-wider">RSP</span>
+                                <span class="px-2 py-0.5 bg-gray-100 text-gray-600 text-[10px] font-bold rounded uppercase tracking-wider">Lawmaker</span>
+                                <span class="px-2 py-0.5 bg-gray-100 text-gray-600 text-[10px] font-bold rounded uppercase tracking-wider">Justice</span>
+                            </div>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                A dynamic young lawyer and prominent RSP leader. She is instrumental in drafting and pushing forward the cabinet's strict anti-corruption legislation and ensuring judicial efficiency.
+                            </p>
+                        </div>
+                        <div class="px-6 py-3 bg-gray-50 border-t border-gray-100 flex justify-between items-center">
+                            <span class="text-xs font-bold text-gray-400 uppercase tracking-wider">Age: 31</span>
+                        </div>
+                    </div>
+
+                    <!-- 14. Agriculture -->
+                    <div class="bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden cabinet-card flex flex-col h-full">
+                        <div class="p-6 flex-grow">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="w-16 h-16 rounded-full overflow-hidden bg-gray-200 shrink-0 border border-gray-100">
+                                    <img src="images/geeta_chaudhary.jpg" alt="Geeta Chaudhary" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                    <div class="w-full h-full items-center justify-center text-gray-500 text-xl font-bold hidden">GC</div>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-sushasan-dark">Geeta Chaudhary</h3>
+                                    <p class="text-sushasan-blue font-semibold text-sm">Minister of Agriculture & Livestock Development</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="px-2 py-0.5 bg-gray-100 text-gray-600 text-[10px] font-bold rounded uppercase tracking-wider">RSP</span>
+                                <span class="px-2 py-0.5 bg-gray-100 text-gray-600 text-[10px] font-bold rounded uppercase tracking-wider">Agriculture</span>
+                                <span class="px-2 py-0.5 bg-gray-100 text-gray-600 text-[10px] font-bold rounded uppercase tracking-wider">Environment</span>
+                            </div>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                An agronomist focused on modernizing farming techniques to ensure food security. She also oversees the Forests & Environment portfolio, balancing agricultural growth with ecological conservation.
+                            </p>
+                        </div>
+                        <div class="px-6 py-3 bg-gray-50 border-t border-gray-100 flex justify-between items-center">
+                            <span class="text-xs font-bold text-gray-400 uppercase tracking-wider">Age: 35</span>
+                            <span class="text-[10px] font-bold text-blue-600 bg-blue-50 px-2 py-0.5 rounded uppercase tracking-tighter">Additional Portfolio: Forests & Environment</span>
+                        </div>
+                    </div>
+
+                    <!-- 15. Women & Children -->
+                    <div class="bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden cabinet-card flex flex-col h-full">
+                        <div class="p-6 flex-grow">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="w-16 h-16 rounded-full overflow-hidden bg-gray-200 shrink-0 border border-gray-100">
+                                    <img src="images/sita_rijal.jpg" alt="Sita Rijal" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                    <div class="w-full h-full items-center justify-center text-gray-500 text-xl font-bold hidden">SR</div>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-sushasan-dark">Sita Rijal</h3>
+                                    <p class="text-sushasan-blue font-semibold text-sm">Minister of Women, Children & Senior Citizens</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="px-2 py-0.5 bg-gray-100 text-gray-600 text-[10px] font-bold rounded uppercase tracking-wider">RSP</span>
+                                <span class="px-2 py-0.5 bg-gray-100 text-gray-600 text-[10px] font-bold rounded uppercase tracking-wider">Social Justice</span>
+                                <span class="px-2 py-0.5 bg-gray-100 text-gray-600 text-[10px] font-bold rounded uppercase tracking-wider">Inclusivity</span>
+                            </div>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                A dedicated social worker ensuring inclusive representation across government policies. She leads initiatives aimed at protecting vulnerable demographics and empowering women.
+                            </p>
+                        </div>
+                        <div class="px-6 py-3 bg-gray-50 border-t border-gray-100 flex justify-between items-center">
+                            <span class="text-xs font-bold text-gray-400 uppercase tracking-wider">Age: 38</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Features & Background -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                <!-- Cabinet Features -->
+                <div class="bg-white rounded-xl shadow-md border border-gray-100 p-6 sm:p-8">
+                    <h3 class="text-xl font-bold text-sushasan-dark mb-6 flex items-center gap-2">
+                        <span class="w-8 h-8 rounded-full bg-red-100 text-red-600 flex items-center justify-center text-sm">01</span>
+                        Key Features
+                    </h3>
+                    <ul class="space-y-6">
+                        <li class="flex items-start gap-4">
+                            <div class="shrink-0 w-10 h-10 bg-blue-50 rounded flex items-center justify-center text-sushasan-blue">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Youth-Dominated</h4>
+                                <p class="text-sm text-gray-600">Around two-thirds of ministers are under 40 years old, reflecting a generational transition in Nepali politics.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="shrink-0 w-10 h-10 bg-blue-50 rounded flex items-center justify-center text-sushasan-blue">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Inclusive Representation</h4>
+                                <p class="text-sm text-gray-600">5 women ministers in the cabinet and representation from diverse social and regional backgrounds.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="shrink-0 w-10 h-10 bg-blue-50 rounded flex items-center justify-center text-sushasan-blue">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Technocratic Leadership</h4>
+                                <p class="text-sm text-gray-600">Ministers possess advanced degrees and expertise in engineering, economics, management, and public policy.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Formation Background -->
+                <div class="bg-white rounded-xl shadow-md border border-gray-100 p-6 sm:p-8">
+                    <h3 class="text-xl font-bold text-sushasan-dark mb-6 flex items-center gap-2">
+                        <span class="w-8 h-8 rounded-full bg-red-100 text-red-600 flex items-center justify-center text-sm">02</span>
+                        Formation Background
+                    </h3>
+                    <div class="space-y-4">
+                        <p class="text-gray-600 leading-relaxed">
+                            The cabinet was formed after the <strong>2026 general election</strong>, where the RSP secured a landslide majority. The election followed youth-led anti-corruption protests in 2025, which reshaped Nepal’s political landscape.
+                        </p>
+                        <p class="text-gray-600 leading-relaxed">
+                            Balen Shah became one of the youngest Prime Ministers in Nepal’s history, symbolizing a shift away from traditional parties.
+                        </p>
+                        <div class="bg-sushasan-grey p-4 rounded-lg border-l-4 border-sushasan-red mt-4">
+                            <h4 class="font-bold text-sushasan-dark mb-1">Reform Priorities</h4>
+                            <ul class="text-sm text-gray-600 grid grid-cols-2 gap-2">
+                                <li>• Anti-corruption reforms</li>
+                                <li>• Efficient public service</li>
+                                <li>• Economic growth</li>
+                                <li>• Infrastructure development</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Portfolio Responsibilities & Context -->
+            <div class="bg-sushasan-blue text-white rounded-xl p-8 sm:p-10 shadow-xl overflow-hidden relative">
+                <!-- Decoration -->
+                <div class="absolute top-0 right-0 -mt-10 -mr-10 w-40 h-40 bg-white/5 rounded-full"></div>
+                
+                <div class="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6">Additional Portfolios</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-4 bg-white/10 p-4 rounded-lg border border-white/10">
+                                <span class="text-xl">🛡️</span>
+                                <div>
+                                    <p class="font-bold">Prime Minister</p>
+                                    <p class="text-sm text-blue-100">Oversees Defense Ministry</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4 bg-white/10 p-4 rounded-lg border border-white/10">
+                                <span class="text-xl">🎓</span>
+                                <div>
+                                    <p class="font-bold">Education Minister</p>
+                                    <p class="text-sm text-blue-100">Oversees Youth & Sports</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4 bg-white/10 p-4 rounded-lg border border-white/10">
+                                <span class="text-xl">🏥</span>
+                                <div>
+                                    <p class="font-bold">Health Minister</p>
+                                    <p class="text-sm text-blue-100">Linked with Drinking Water</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4 bg-white/10 p-4 rounded-lg border border-white/10">
+                                <span class="text-xl">🏢</span>
+                                <div>
+                                    <p class="font-bold">Federal Affairs Minister</p>
+                                    <p class="text-sm text-blue-100">Handles Land Management & Poverty Alleviation</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4 bg-white/10 p-4 rounded-lg border border-white/10">
+                                <span class="text-xl">🚜</span>
+                                <div>
+                                    <p class="font-bold">Agriculture Minister</p>
+                                    <p class="text-sm text-blue-100">Oversees Forests & Environment</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6">Governance Context</h3>
+                        <p class="text-blue-50 leading-relaxed mb-6">
+                            Nepal has experienced frequent government changes historically. The current cabinet aims to deliver stability, transparency, and accountability.
+                        </p>
+                        <p class="text-blue-50 leading-relaxed mb-8">
+                            Public expectations are particularly high due to youth support, reform promises, and a strong electoral mandate.
+                        </p>
+                        <div class="bg-sushasan-red p-6 rounded-lg text-center">
+                            <h4 class="text-xl font-bold mb-2">Historic Transition</h4>
+                            <p class="text-sm text-red-100">This cabinet is widely seen as a test case for modern governance in Nepal, with expectations to deliver measurable improvements in public trust.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-10 sm:py-12 border-t border-gray-800 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 sm:gap-10">
+                <div class="col-span-1 sm:col-span-2 md:col-span-1 text-center sm:text-left">
+                    <img src="SUSHASAN.png" alt="Sushasan Logo" class="h-10 w-auto object-contain bg-white p-1 rounded mb-4 mx-auto sm:mx-0">
+                    <h2 class="text-xl font-bold text-white mb-2 font-sans tracking-wide">सुशासन</h2>
+                    <p class="text-xs sm:text-sm text-gray-400 mb-4">नेतृत्व | व्यवस्थापन | जवाफदेहिता</p>
+                    <p class="text-xs sm:text-sm text-gray-500 leading-relaxed max-w-sm mx-auto sm:mx-0">
+                        An independent civic platform dedicated to institutional accountability and good governance in Nepal.
+                    </p>
+                </div>
+                <div class="text-center sm:text-left">
+                    <h4 class="text-white font-semibold mb-3 sm:mb-4 uppercase text-xs sm:text-sm tracking-wider">Platform</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="index.html#about" class="hover:text-white transition-colors block py-1">About Sushasan</a></li>
+                        <li><a href="index.html#pillars" class="hover:text-white transition-colors block py-1">Our Pillars</a></li>
+                        <li><a href="index.html#questions" class="hover:text-white transition-colors block py-1">Governance Questions</a></li>
+                        <li><a href="nepal-government-cabinet.html" class="hover:text-white transition-colors block py-1">Cabinet 2026</a></li>
+                    </ul>
+                </div>
+                <div class="text-center sm:text-left">
+                    <h4 class="text-white font-semibold mb-3 sm:mb-4 uppercase text-xs sm:text-sm tracking-wider">Resources</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="house-of-representative-members.html" class="hover:text-white transition-colors block py-1">HoR Members</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors block py-1">Research & Reports</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors block py-1">Civic Education</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors block py-1">News & Updates</a></li>
+                    </ul>
+                </div>
+                <div class="text-center sm:text-left">
+                    <h4 class="text-white font-semibold mb-3 sm:mb-4 uppercase text-xs sm:text-sm tracking-wider">Connect</h4>
+                    <ul class="space-y-3 text-sm mb-6 flex flex-col items-center sm:items-start">
+                        <li class="flex items-center gap-2">
+                            <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                            <a href="mailto:info@sushasan.org" class="hover:text-white transition-colors py-1">info@sushasan.org</a>
+                        </li>
+                    </ul>
+                    <div class="flex space-x-5 justify-center sm:justify-start">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors p-1" aria-label="Twitter">
+                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors p-1" aria-label="Facebook">
+                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-10 sm:mt-12 pt-6 sm:pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500 text-center sm:text-left">
+                <p>&copy; 2026 Sushasan (सुशासन). All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Scripts -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const iconClosed = document.getElementById('menu-icon-closed');
+            const iconOpen = document.getElementById('menu-icon-open');
+
+            menuBtn.addEventListener('click', () => {
+                const isHidden = mobileMenu.classList.contains('hidden');
+                if (isHidden) {
+                    mobileMenu.classList.remove('hidden');
+                    iconClosed.classList.add('hidden');
+                    iconOpen.classList.remove('hidden');
+                } else {
+                    mobileMenu.classList.add('hidden');
+                    iconClosed.classList.remove('hidden');
+                    iconOpen.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
+ody>
+
+</html>
